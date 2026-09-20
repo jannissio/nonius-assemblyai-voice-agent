@@ -8,6 +8,14 @@ import {createApplication} from '../server.mjs';
 import {WebSocket} from 'ws';
 
 const config=()=>configuration({NONIUS_BUDGET_USD:'2',NONIUS_DAILY_BUDGET_USD:'1',NONIUS_MAX_AUDIO_SECONDS:'90000',NONIUS_MAX_LLM_CALLS:'2000',NONIUS_LLM_COOLDOWN_SECONDS:'0'});
+test('initialization serializes schema creation and never overwrites an existing allowance',async()=>{
+  const commands=[];let released=false;
+  const client={query:async sql=>{commands.push(sql);return {rows:[]};},release:()=>{released=true;}};
+  const budget=new PostgresBudget(config(),{pool:{connect:async()=>client,query:async()=>({rows:[{state:emptyBudget(),now:new Date()}]})}});
+  await budget.initialize();
+  assert.equal(commands[0],'BEGIN');assert.match(commands[1],/pg_advisory_xact_lock/);
+  assert.match(commands[3],/ON CONFLICT \(id\) DO NOTHING/);assert.equal(commands[4],'COMMIT');assert.equal(released,true);
+});
 test('Berlin midnight resets only the daily allowance; the cumulative limit survives the new day',()=>{
   const cfg=config(),before=Date.parse('2026-09-20T21:59:00Z'),after=Date.parse('2026-09-20T22:01:00Z');
   let state=nextReservation(emptyBudget(),cfg,'audio',{seconds:3600},before).state;

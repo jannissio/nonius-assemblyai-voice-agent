@@ -21,8 +21,9 @@ try{
   assert.equal(snapshot.audioSecondsReserved,72);
   await assert.rejects(()=>reopened.reserve('audio',{seconds:1}),error=>error.code==='BUDGET_EXHAUSTED');
   console.log('PASS: concurrent reservations were serialized; committed totals survived new database connections; exhausted limits blocked further use. No AssemblyAI calls were made.');
-}catch{
+}catch(error){
   process.exitCode=1;console.error('FAIL: durable quota probe did not pass. Leave provider access disabled and review the database configuration.');
+  console.error(error.code==='ERR_ASSERTION'?'Quota assertion failed.':error.code==='BUDGET_UNAVAILABLE'?'Database accounting unavailable.':'Unexpected probe failure.');
 }finally{
   // Only this run's random, disposable test ledger can be removed.
   const cleanup=reopened||make();
