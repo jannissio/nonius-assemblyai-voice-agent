@@ -1,0 +1,23 @@
+{
+  "name": "nonius-interview-companion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "A reporter-controlled voice interview companion with inspectable transcript evidence.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "demo": "node scripts/start-sample.mjs",
+    "host": "node scripts/start-hosted.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "reproduce": "node scripts/reproduce.mjs",
+    "check": "node scripts/check-source.mjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "ws": "8.21.3"
+  }
+}

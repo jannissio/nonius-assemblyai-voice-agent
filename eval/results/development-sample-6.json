@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-19T06:55:07.148Z",
+  "developmentOnly": true,
+  "afterTurnId": "sample-6",
+  "cues": [
+    {
+      "id": "correction:sample-6:0",
+      "kind": "correction",
+      "title": "Confirm the correction",
+      "focus": "fifty million pounds",
+      "question": "You mentioned “fifty million pounds”. Which version should I record as your correction?",
+      "evidence": [
+        {
+          "turnId": "sample-6",
+          "quote": "The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles.",
+          "startChar": 0,
+          "endChar": 110,
+          "speaker": "Source",
+          "start": 29590,
+          "end": 38915,
+          "alignment": "turn",
+          "source": "sample"
+        }
+      ],
+      "status": "open"
+    }
+  ],
+  "rejected": [],
+  "engine": "AssemblyAI LLM Gateway",
+  "model": "qwen3.5-4b-32k-fast",
+  "promptVersion": "interview-cues-v2-qwen",
+  "elapsedMs": 624,
+  "usage": {
+    "input_tokens": 890,
+    "prompt_tokens": 890,
+    "output_tokens": 53,
+    "completion_tokens": 53,
+    "total_tokens": 943,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      }
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": {
+    "cues": [
+      {
+        "kind": "correction",
+        "focus": "fifty million pounds",
+        "evidence": [
+          {
+            "turn_id": "sample-6",
+            "quote": "The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nonius helps reporters find the next question and keep the original evidence close.">
+  <title>Nonius · Interview companion</title>
+  <meta name="nonius-build" content="20260920-followup-passages-4">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css?v=20260920-followup-passages-4">
+  <script type="module" src="/app.js?v=20260920-followup-passages-4"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to interview</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Nonius home"><span class="brand-mark" aria-hidden="true">n</span><span>Nonius<small>THE INTERVIEW COMPANION</small></span></a>
+    <nav aria-label="Workspace"><button class="nav active" data-view="interview" aria-current="page">Interview</button><button class="nav" data-view="evidence">Evidence notebook <span id="quote-count">0</span></button><button class="nav" data-view="research">Research &amp; limits</button></nav>
+    <div class="provider"><span class="provider-dot"></span>Powered by AssemblyAI</div>
+  </header>
+  <main id="workspace">
+    <section id="view-interview" class="view">
+      <div class="page-heading"><div><div class="eyebrow">YOUR REPORTING DESK</div><h1>Stay with the conversation.</h1><p>Find the follow-up. Keep the source in view.</p></div><div class="session-state"><span id="status-dot" class="status-dot"></span><span id="session-status" role="status">Ready when you are</span><span id="session-clock">00:00</span></div></div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div class="desk">
+        <aside class="brief-panel" aria-label="Interview brief">
+          <div class="panel-label">01 <span>THE BRIEF</span></div>
+          <label class="field-label" for="interview-title">Interview title</label><input id="interview-title" maxlength="100" placeholder="Give this interview a title">
+          <label class="field-label" for="interview-brief">What are you trying to understand?</label><textarea id="interview-brief" rows="4" maxlength="1200" placeholder="Describe the topic and what you want to learn."></textarea>
+          <div class="section-line"><h2>Questions to cover</h2><span id="goals-progress">0 / 0</span></div>
+          <div id="goals-list" class="goals-list"></div>
+          <form id="goal-form" class="goal-add"><input id="new-goal" aria-label="Add an interview question" placeholder="Add a question…" maxlength="180"><button type="submit" aria-label="Add question">+</button></form>
+          <p class="subtle">You mark a question covered when you have the answer you need.</p>
+          <div class="brief-bottom"><div class="small-label">THE COMPANION'S ROLE</div><p>Suggestions stay on your screen. Nonius speaks only when you ask.</p><button id="new-session" class="text-button">Start a fresh notebook</button></div>
+        </aside>
+        <section class="transcript-panel" aria-labelledby="transcript-heading">
+          <div class="panel-top"><div class="panel-label">02 <span id="transcript-heading">THE CONVERSATION</span></div><span id="mode-label" class="mode-label">Nothing recorded</span></div>
+          <section class="people-panel" aria-label="People in this interview">
+            <div class="people-heading"><span class="small-label">PEOPLE</span><span id="people-count" class="subtle" role="status">Voices appear here when someone speaks.</span></div>
+            <div id="people-list" class="people-list"></div>
+            <p id="people-help" class="subtle">Name each detected voice and choose its role once. Changes apply to past and future passages in this interview.</p>
+          </section>
+          <div id="transcript" class="transcript" tabindex="0" aria-label="Interview transcript">
+            <div class="welcome" id="welcome"><div class="sound-motif" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><h2>A second ear.<br>Your interview.</h2><p>Talk naturally. See questions worth following up, alongside the words that prompted them.</p><button id="sample-start" class="primary">Explore a sample interview <span aria-hidden="true">↗</span></button><p class="sample-caption">Fictional reporting scenario · synthetic voices<br>No API credits needed</p></div>
+          </div>
+          <div id="interim" class="interim" aria-live="polite" hidden></div>
+          <div class="recorder"><div class="record-actions"><button id="record-start" class="record-button"><span class="record-icon" aria-hidden="true"></span>Start microphone</button><button id="record-stop" class="danger-outline" hidden>End interview</button><button id="sample-play" class="secondary" hidden>Play sample audio</button><button id="sample-all" class="text-button" hidden>Show full transcript</button><button id="resume-recording" class="secondary" hidden>Play recording</button></div><div class="recorder-secondary"><button id="upload-button" class="text-button">Use a WAV recording</button><input id="audio-file" type="file" accept=".wav,audio/wav" hidden><label class="check-line recording-sound"><input id="recording-sound" type="checkbox" checked>Play recording audio</label></div><div id="recording-hint" class="recording-hint">Start only with participants' agreement.</div><audio id="recording-monitor" preload="auto" hidden></audio></div>
+        </section>
+        <aside class="companion-panel" aria-label="Follow-up suggestions">
+          <div class="panel-top"><div class="panel-label">03 <span>THE FOLLOW-UP</span></div><span id="cue-count" class="count-dot">0</span></div>
+          <div class="companion-intro"><h2>The next useful question</h2><p>Every suggestion shows the passage behind it. You choose what to ask.</p></div>
+          <div id="cue-list" class="cue-list"><div class="empty-cues"><span aria-hidden="true">“</span><p>Room for a better question.</p><small>Follow-ups appear here as the interview develops.</small></div></div>
+          <div class="companion-actions"><button id="analyze" class="secondary" disabled>Look for a follow-up</button><button id="ask-companion" class="secondary" disabled>Ask Nonius by voice</button><button id="question-upload" class="text-button" disabled>Use a recorded voice question</button><input id="question-file" type="file" accept=".wav,audio/wav" hidden><button id="speak-next" class="text-button" disabled>Read the next suggestion aloud</button><label class="check-line"><input id="auto-analyze" type="checkbox">Suggest after each source answer</label><div id="analysis-status" class="subtle" role="status">You stay in control of the conversation.</div></div>
+        </aside>
+      </div>
+      <details class="typed-controls"><summary>Add a typed turn for rehearsal</summary><form id="typed-form"><select id="typed-speaker" aria-label="Speaker"><option>Source</option><option>Reporter</option></select><textarea id="typed-text" aria-label="Typed transcript turn" placeholder="Paste or type one answer…" rows="2" maxlength="2000"></textarea><button class="secondary" type="submit">Add turn</button></form><p>Typed turns have no audio evidence. Live analysis uses the same transcript checks.</p></details>
+    </section>
+
+    <section id="view-evidence" class="view" hidden>
+      <div class="page-heading"><div><div class="eyebrow">YOUR SOURCE MATERIAL</div><h1>Evidence notebook</h1><p>Original excerpts, your checks, and the questions still open.</p></div><button id="export-bundle" class="primary">Download interview bundle <span aria-hidden="true">↓</span></button></div>
+      <div class="evidence-banner">A transcript is a starting point. Listen to the audio before relying on a quotation, and verify the source's claims separately.</div>
+      <div class="notebook-layout"><div><h2 class="notebook-title">Saved excerpts</h2><div id="quotes-list" class="quotes-list"></div></div><aside class="notebook-summary"><div class="panel-label">INTERVIEW RECORD</div><h2 id="notebook-title">No interview yet</h2><dl><dt>Transcript turns</dt><dd id="turn-total">0</dd><dt>Excerpts checked against audio</dt><dd id="checked-total">0</dd><dt>Follow-ups still open</dt><dd id="open-total">0</dd></dl><p>Your bundle contains notes, transcript data, a file manifest and available audio. Downloads stay on your device.</p><p>Reporter notes never replace the original transcript.</p></aside></div>
+    </section>
+
+    <section id="view-research" class="view" hidden>
+      <div class="page-heading"><div><div class="eyebrow">DESIGN WITH EVIDENCE</div><h1>What supports this approach</h1><p>Research motivates the design. Our tests establish only what they measure.</p></div></div>
+      <div class="research-layout"><article><h2>Keep the reporting strategy human</h2><p>NewsInterview studies journalistic dialogue and model-generated follow-ups. Its simulated interviews reveal limits in topic management and recognizing answered questions. This motivates manual coverage checks; it does not prove that Nonius improves reporting.</p><a href="https://aclanthology.org/2025.acl-long.1580/" target="_blank" rel="noreferrer">Spangher et al., ACL 2025 ↗</a><h2>Support the interviewer’s judgment</h2><p>A study with 17 qualitative interviewers explored AI-generated follow-ups through a researcher-mediated setup. Its findings motivate discreet suggestions, control over timing and clear explanations. It did not validate this application or establish improved newsroom outcomes.</p><a href="https://arxiv.org/abs/2509.12709" target="_blank" rel="noreferrer">Zhang et al., 2025 ↗</a><h2>Protect the conversation</h2><p>A related CHIWORK 2026 paper highlights divided attention, rapport, disclosure and accountability. Nonius therefore speaks on request, identifies its involvement and leaves decisions to the reporter.</p><a href="https://arxiv.org/abs/2606.30980" target="_blank" rel="noreferrer">Zhang et al., CHIWORK 2026 ↗</a><h2>Keep claims attached to their source</h2><p>The Society of Professional Journalists calls for accuracy, context and verification using original sources. Every Nonius cue must cite an exact transcript excerpt. That check establishes where the words appear, not whether they were recognized correctly or whether the claim is true.</p><a href="https://www.spj.org/spj-code-of-ethics/" target="_blank" rel="noreferrer">SPJ Code of Ethics ↗</a></article><aside><h2>What this prototype does</h2><ul><li>Streams speech through AssemblyAI.</li><li>Checks exact transcript evidence for suggested follow-ups.</li><li>Uses predefined question templates.</li><li>Keeps original excerpts alongside reporter annotations.</li></ul><h2>What remains unvalidated</h2><p>Journalist usefulness, effects on rapport, performance across accents and languages, and behavior in sensitive interviews need real user studies. Synthetic tests cannot establish these outcomes.</p><h2>Audio and privacy</h2><p>Live audio goes to AssemblyAI for transcription. Transcript context goes to its LLM Gateway for analysis. The app holds interview audio in your browser and keeps no interview content in server logs. Provider processing has its own terms. Closing the page clears the notebook unless you download it.</p><h2>Development credit controls</h2><p id="budget-description">Loading the local credit reservation ledger…</p><p class="subtle">The local ledger is a conservative estimate, not the account's available balance. The sample interview uses no API credits.</p></aside></div>
+    </section>
+  </main>
+  <footer class="footer"><span>Nonius <span class="footer-separator">/</span> A reporting prototype</span><span>AssemblyAI Voice Agent Hackathon · September 2026</span><span>Original code: MIT</span></footer>
+  <dialog id="consent-dialog"><form method="dialog"><div class="eyebrow">BEFORE RECORDING</div><h2>Make room for an informed conversation.</h2><p>Let everyone know that an AI companion will transcribe the interview and suggest follow-up questions.</p><p>Audio goes to AssemblyAI. Transcript context goes to its LLM Gateway. Your browser keeps the recording until you clear it or close this page.</p><label class="check-line"><input id="consent-check" type="checkbox" required>I have the participants' agreement to this recording and processing.</label><div class="dialog-actions"><button value="cancel" formnovalidate class="secondary">Cancel</button><button id="consent-start" value="start" class="primary">Start interview</button></div></form></dialog>
+  <audio id="interview-audio" preload="metadata"></audio>
+  <audio id="companion-audio" preload="none"></audio>
+  <dialog id="action-dialog"><form method="dialog"><h2 id="action-title">Confirm this step</h2><p id="action-message"></p><div class="dialog-actions"><button value="cancel" class="secondary">Cancel</button><button value="continue" class="primary">Continue</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

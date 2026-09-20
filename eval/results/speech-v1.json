@@ -1,0 +1,1137 @@
+{
+  "createdAt": "2026-09-19T06:28:41.844Z",
+  "protocol": "docs/EVALUATION_PROTOCOL.md",
+  "speechModel": "universal-3-5-pro",
+  "limitations": "Authored synthetic engineering fixtures. One installed English synthesizer, not independent human speakers. No population accuracy claim.",
+  "normalizer": "Lowercase; whitespace collapse; token-boundary match to a predeclared allowed spelling. Measures slot presence, not complete semantic equivalence.",
+  "results": [
+    {
+      "id": "asr-03",
+      "reference": "The budget is fifteen million pounds, not fifty million pounds.",
+      "audio": {
+        "path": "fixtures/audio/asr-03.wav",
+        "sha256": "c89ab8ff860639ee4e211d85b5f15bde0aa6999c6a1a1f231ad2877a35354a7d"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.22,
+      "elapsedMs": 8852,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "The budget is £15 million.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 328,
+              "text": "The",
+              "confidence": 0.987215,
+              "word_is_final": true
+            },
+            {
+              "start": 349,
+              "end": 1005,
+              "text": "budget",
+              "confidence": 0.999729,
+              "word_is_final": true
+            },
+            {
+              "start": 1026,
+              "end": 1244,
+              "text": "is",
+              "confidence": 0.999925,
+              "word_is_final": true
+            },
+            {
+              "start": 1265,
+              "end": 1593,
+              "text": "£15",
+              "confidence": 0.998393,
+              "word_is_final": true
+            },
+            {
+              "start": 1614,
+              "end": 2489,
+              "text": "million.",
+              "confidence": 0.996863,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "The budget is £15 million.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "Not £50 million.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 2624,
+              "end": 3030,
+              "text": "Not",
+              "confidence": 0.992465,
+              "word_is_final": true
+            },
+            {
+              "start": 3057,
+              "end": 3463,
+              "text": "£50",
+              "confidence": 0.99977,
+              "word_is_final": true
+            },
+            {
+              "start": 3490,
+              "end": 4574,
+              "text": "million.",
+              "confidence": 0.971434,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "Not £50 million.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "The budget is £15 million. Not £50 million.",
+      "slots": [
+        {
+          "name": "first amount",
+          "allowed": [
+            "15 million",
+            "fifteen million"
+          ],
+          "matched": true
+        },
+        {
+          "name": "negation",
+          "allowed": [
+            "not"
+          ],
+          "matched": true
+        },
+        {
+          "name": "second amount",
+          "allowed": [
+            "50 million",
+            "fifty million"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-04",
+      "reference": "We have not measured the results yet. These are estimates.",
+      "audio": {
+        "path": "fixtures/audio/asr-04.wav",
+        "sha256": "f7b1dab83166c30b91fed6056ad209c16b8e89449b0431e57cfd325e6460df45"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.07,
+      "elapsedMs": 8626,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "We have not measured the results yet.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 149,
+              "text": "We",
+              "confidence": 0.962664,
+              "word_is_final": true
+            },
+            {
+              "start": 163,
+              "end": 461,
+              "text": "have",
+              "confidence": 0.999793,
+              "word_is_final": true
+            },
+            {
+              "start": 475,
+              "end": 698,
+              "text": "not",
+              "confidence": 0.999984,
+              "word_is_final": true
+            },
+            {
+              "start": 712,
+              "end": 1308,
+              "text": "measured",
+              "confidence": 0.999979,
+              "word_is_final": true
+            },
+            {
+              "start": 1322,
+              "end": 1545,
+              "text": "the",
+              "confidence": 0.99996,
+              "word_is_final": true
+            },
+            {
+              "start": 1559,
+              "end": 2080,
+              "text": "results",
+              "confidence": 0.999953,
+              "word_is_final": true
+            },
+            {
+              "start": 2094,
+              "end": 2392,
+              "text": "yet.",
+              "confidence": 0.995436,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "We have not measured the results yet.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "These are estimates.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 2528,
+              "end": 3058,
+              "text": "These",
+              "confidence": 0.999964,
+              "word_is_final": true
+            },
+            {
+              "start": 3079,
+              "end": 3397,
+              "text": "are",
+              "confidence": 0.99999,
+              "word_is_final": true
+            },
+            {
+              "start": 3418,
+              "end": 4478,
+              "text": "estimates.",
+              "confidence": 0.999324,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "These are estimates.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 5,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "We have not measured the results yet. These are estimates.",
+      "slots": [
+        {
+          "name": "negation",
+          "allowed": [
+            "not"
+          ],
+          "matched": true
+        },
+        {
+          "name": "qualification",
+          "allowed": [
+            "estimates"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-05",
+      "reference": "The contract starts on the third of October, twenty twenty seven.",
+      "audio": {
+        "path": "fixtures/audio/asr-05.wav",
+        "sha256": "fb624181d540e30ba069d9a04ef85b0e8a4289a7430a0c20501bbb0e5a69ffbe"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.15,
+      "elapsedMs": 8742,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "The contract starts on the 3rd of October, 2027.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 403,
+              "text": "The",
+              "confidence": 0.994981,
+              "word_is_final": true
+            },
+            {
+              "start": 429,
+              "end": 1505,
+              "text": "contract",
+              "confidence": 0.999847,
+              "word_is_final": true
+            },
+            {
+              "start": 1531,
+              "end": 2338,
+              "text": "starts",
+              "confidence": 0.999866,
+              "word_is_final": true
+            },
+            {
+              "start": 2364,
+              "end": 2633,
+              "text": "on",
+              "confidence": 0.999861,
+              "word_is_final": true
+            },
+            {
+              "start": 2659,
+              "end": 3062,
+              "text": "the",
+              "confidence": 0.929311,
+              "word_is_final": true
+            },
+            {
+              "start": 3088,
+              "end": 3491,
+              "text": "3rd",
+              "confidence": 0.999885,
+              "word_is_final": true
+            },
+            {
+              "start": 3517,
+              "end": 3786,
+              "text": "of",
+              "confidence": 0.999813,
+              "word_is_final": true
+            },
+            {
+              "start": 3812,
+              "end": 4888,
+              "text": "October,",
+              "confidence": 0.990078,
+              "word_is_final": true
+            },
+            {
+              "start": 4914,
+              "end": 5587,
+              "text": "2027.",
+              "confidence": 0.99929,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "The contract starts on the 3rd of October, 2027.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "The contract starts on the 3rd of October, 2027.",
+      "slots": [
+        {
+          "name": "month",
+          "allowed": [
+            "october"
+          ],
+          "matched": true
+        },
+        {
+          "name": "year",
+          "allowed": [
+            "2027",
+            "twenty twenty seven",
+            "twenty twenty-seven"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-06",
+      "reference": "The total is one point five million euros. Sorry, I mean one point six million euros.",
+      "audio": {
+        "path": "fixtures/audio/asr-06.wav",
+        "sha256": "2caf8ce21a677d7fa3fb545e6c3f2fb8d6cfc30e840a79b8b1cb804a337ee08b"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 7.84,
+      "elapsedMs": 11635,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "The total is €1.5 million.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 391,
+              "text": "The",
+              "confidence": 0.987237,
+              "word_is_final": true
+            },
+            {
+              "start": 417,
+              "end": 1069,
+              "text": "total",
+              "confidence": 0.999975,
+              "word_is_final": true
+            },
+            {
+              "start": 1095,
+              "end": 1356,
+              "text": "is",
+              "confidence": 0.999919,
+              "word_is_final": true
+            },
+            {
+              "start": 1382,
+              "end": 1904,
+              "text": "€1.5",
+              "confidence": 0.977074,
+              "word_is_final": true
+            },
+            {
+              "start": 1930,
+              "end": 2974,
+              "text": "million.",
+              "confidence": 0.996545,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "The total is €1.5 million.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "Sorry.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 3232,
+              "end": 4480,
+              "text": "Sorry.",
+              "confidence": 0.884498,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "Sorry.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 2,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "I mean €1.6 million.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 4608,
+              "end": 4755,
+              "text": "I",
+              "confidence": 0.999504,
+              "word_is_final": true
+            },
+            {
+              "start": 4784,
+              "end": 5373,
+              "text": "mean",
+              "confidence": 0.99995,
+              "word_is_final": true
+            },
+            {
+              "start": 5402,
+              "end": 5991,
+              "text": "€1.6",
+              "confidence": 0.989166,
+              "word_is_final": true
+            },
+            {
+              "start": 6020,
+              "end": 7198,
+              "text": "million.",
+              "confidence": 0.988455,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "I mean €1.6 million.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 8,
+          "session_duration_seconds": 11
+        }
+      ],
+      "transcript": "The total is €1.5 million. Sorry. I mean €1.6 million.",
+      "slots": [
+        {
+          "name": "first amount",
+          "allowed": [
+            "1.5 million",
+            "one point five million"
+          ],
+          "matched": true
+        },
+        {
+          "name": "corrected amount",
+          "allowed": [
+            "1.6 million",
+            "one point six million"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-07",
+      "reference": "That is a projection. We cannot promise a twenty percent reduction.",
+      "audio": {
+        "path": "fixtures/audio/asr-07.wav",
+        "sha256": "38932be61c817bda85164460a35af2bb80cc6c9e0add0e379fd825c176ee9b86"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.65,
+      "elapsedMs": 9247,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "That is a projection.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 344,
+              "text": "That",
+              "confidence": 0.976332,
+              "word_is_final": true
+            },
+            {
+              "start": 361,
+              "end": 533,
+              "text": "is",
+              "confidence": 0.999087,
+              "word_is_final": true
+            },
+            {
+              "start": 550,
+              "end": 636,
+              "text": "a",
+              "confidence": 0.999812,
+              "word_is_final": true
+            },
+            {
+              "start": 653,
+              "end": 1599,
+              "text": "projection.",
+              "confidence": 0.989247,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "That is a projection.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "We cannot promise a 20% reduction.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 1728,
+              "end": 1952,
+              "text": "We",
+              "confidence": 0.999966,
+              "word_is_final": true
+            },
+            {
+              "start": 1974,
+              "end": 2646,
+              "text": "cannot",
+              "confidence": 0.99997,
+              "word_is_final": true
+            },
+            {
+              "start": 2668,
+              "end": 3452,
+              "text": "promise",
+              "confidence": 0.999985,
+              "word_is_final": true
+            },
+            {
+              "start": 3474,
+              "end": 3586,
+              "text": "a",
+              "confidence": 0.999977,
+              "word_is_final": true
+            },
+            {
+              "start": 3608,
+              "end": 3944,
+              "text": "20%",
+              "confidence": 0.999813,
+              "word_is_final": true
+            },
+            {
+              "start": 3966,
+              "end": 5086,
+              "text": "reduction.",
+              "confidence": 0.999124,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "We cannot promise a 20% reduction.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "That is a projection. We cannot promise a 20% reduction.",
+      "slots": [
+        {
+          "name": "qualification",
+          "allowed": [
+            "projection"
+          ],
+          "matched": true
+        },
+        {
+          "name": "negation",
+          "allowed": [
+            "cannot",
+            "can't"
+          ],
+          "matched": true
+        },
+        {
+          "name": "percentage",
+          "allowed": [
+            "20 percent",
+            "20%",
+            "twenty percent"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-08",
+      "reference": "Twenty residents attended the meeting. Two hundred were invited.",
+      "audio": {
+        "path": "fixtures/audio/asr-08.wav",
+        "sha256": "63869c07c16360ea844fdcad074e9f2aa7782cc5639d6abb0b8d18df60524d47"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.22,
+      "elapsedMs": 8817,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "20 residents attended the meeting.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 147,
+              "text": "20",
+              "confidence": 0.974509,
+              "word_is_final": true
+            },
+            {
+              "start": 161,
+              "end": 824,
+              "text": "residents",
+              "confidence": 0.999589,
+              "word_is_final": true
+            },
+            {
+              "start": 838,
+              "end": 1428,
+              "text": "attended",
+              "confidence": 0.999989,
+              "word_is_final": true
+            },
+            {
+              "start": 1442,
+              "end": 1663,
+              "text": "the",
+              "confidence": 0.999985,
+              "word_is_final": true
+            },
+            {
+              "start": 1677,
+              "end": 2267,
+              "text": "meeting.",
+              "confidence": 0.999652,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "20 residents attended the meeting.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "200 were invited.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 2432,
+              "end": 2868,
+              "text": "200",
+              "confidence": 0.999255,
+              "word_is_final": true
+            },
+            {
+              "start": 2897,
+              "end": 3478,
+              "text": "were",
+              "confidence": 0.999955,
+              "word_is_final": true
+            },
+            {
+              "start": 3507,
+              "end": 4670,
+              "text": "invited.",
+              "confidence": 0.999166,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "200 were invited.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "20 residents attended the meeting. 200 were invited.",
+      "slots": [
+        {
+          "name": "attended",
+          "allowed": [
+            "20 residents",
+            "twenty residents"
+          ],
+          "matched": true
+        },
+        {
+          "name": "invited",
+          "allowed": [
+            "200",
+            "two hundred"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-09",
+      "reference": "The figures refer to 2024, not 2025.",
+      "audio": {
+        "path": "fixtures/audio/asr-09.wav",
+        "sha256": "969b01e43268155fa488e0251ae207d3b5510bd95b4f01fc78b933f48a607c0b"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.255,
+      "elapsedMs": 8839,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "The figures refer to 2024, not 2025.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 548,
+              "text": "The",
+              "confidence": 0.979709,
+              "word_is_final": true
+            },
+            {
+              "start": 584,
+              "end": 1862,
+              "text": "figures",
+              "confidence": 0.999914,
+              "word_is_final": true
+            },
+            {
+              "start": 1898,
+              "end": 2811,
+              "text": "refer",
+              "confidence": 0.999056,
+              "word_is_final": true
+            },
+            {
+              "start": 2847,
+              "end": 3212,
+              "text": "to",
+              "confidence": 0.999994,
+              "word_is_final": true
+            },
+            {
+              "start": 3248,
+              "end": 4161,
+              "text": "2024,",
+              "confidence": 0.999841,
+              "word_is_final": true
+            },
+            {
+              "start": 4197,
+              "end": 4745,
+              "text": "not",
+              "confidence": 0.999969,
+              "word_is_final": true
+            },
+            {
+              "start": 4781,
+              "end": 5694,
+              "text": "2025.",
+              "confidence": 0.998962,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "The figures refer to 2024, not 2025.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 8
+        }
+      ],
+      "transcript": "The figures refer to 2024, not 2025.",
+      "slots": [
+        {
+          "name": "year one",
+          "allowed": [
+            "2024",
+            "twenty twenty four",
+            "twenty twenty-four"
+          ],
+          "matched": true
+        },
+        {
+          "name": "negation",
+          "allowed": [
+            "not"
+          ],
+          "matched": true
+        },
+        {
+          "name": "year two",
+          "allowed": [
+            "2025",
+            "twenty twenty five",
+            "twenty twenty-five"
+          ],
+          "matched": true
+        }
+      ]
+    },
+    {
+      "id": "asr-10",
+      "reference": "I do not know the final cost. Please check the published accounts.",
+      "audio": {
+        "path": "fixtures/audio/asr-10.wav",
+        "sha256": "564ce6d5994fcb7484fea39bb6015b0502274240ac27878495f574da23af9124"
+      },
+      "speechModel": "universal-3-5-pro",
+      "inputAudioSeconds": 5.705,
+      "elapsedMs": 9378,
+      "turns": [
+        {
+          "turn_order": 0,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "I do not know the final cost.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 0,
+              "end": 89,
+              "text": "I",
+              "confidence": 0.995627,
+              "word_is_final": true
+            },
+            {
+              "start": 106,
+              "end": 285,
+              "text": "do",
+              "confidence": 0.998786,
+              "word_is_final": true
+            },
+            {
+              "start": 302,
+              "end": 571,
+              "text": "not",
+              "confidence": 0.999954,
+              "word_is_final": true
+            },
+            {
+              "start": 588,
+              "end": 947,
+              "text": "know",
+              "confidence": 0.999987,
+              "word_is_final": true
+            },
+            {
+              "start": 964,
+              "end": 1233,
+              "text": "the",
+              "confidence": 0.999948,
+              "word_is_final": true
+            },
+            {
+              "start": 1250,
+              "end": 1699,
+              "text": "final",
+              "confidence": 0.999978,
+              "word_is_final": true
+            },
+            {
+              "start": 1716,
+              "end": 2165,
+              "text": "cost.",
+              "confidence": 0.997746,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "I do not know the final cost.",
+          "type": "Turn"
+        },
+        {
+          "turn_order": 1,
+          "turn_is_formatted": true,
+          "end_of_turn": true,
+          "transcript": "Please check the published accounts.",
+          "end_of_turn_confidence": 1,
+          "words": [
+            {
+              "start": 2304,
+              "end": 2813,
+              "text": "Please",
+              "confidence": 0.999713,
+              "word_is_final": true
+            },
+            {
+              "start": 2829,
+              "end": 3253,
+              "text": "check",
+              "confidence": 0.999932,
+              "word_is_final": true
+            },
+            {
+              "start": 3269,
+              "end": 3523,
+              "text": "the",
+              "confidence": 0.99995,
+              "word_is_final": true
+            },
+            {
+              "start": 3539,
+              "end": 4302,
+              "text": "published",
+              "confidence": 0.999341,
+              "word_is_final": true
+            },
+            {
+              "start": 4318,
+              "end": 5081,
+              "text": "accounts.",
+              "confidence": 0.998266,
+              "word_is_final": true
+            }
+          ],
+          "utterance": "Please check the published accounts.",
+          "type": "Turn"
+        }
+      ],
+      "events": [
+        {
+          "type": "Begin",
+          "configuration": {
+            "model": "universal-3-5-pro",
+            "mode": "balanced",
+            "api_version": "2025-05-12",
+            "speaker_labels": false,
+            "redact_pii": false,
+            "filter_profanity": false,
+            "domain": null,
+            "voice_focus": null
+          }
+        },
+        {
+          "type": "Termination",
+          "audio_duration_seconds": 6,
+          "session_duration_seconds": 9
+        }
+      ],
+      "transcript": "I do not know the final cost. Please check the published accounts.",
+      "slots": [
+        {
+          "name": "uncertainty",
+          "allowed": [
+            "do not know",
+            "don't know"
+          ],
+          "matched": true
+        },
+        {
+          "name": "source",
+          "allowed": [
+            "published accounts"
+          ],
+          "matched": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "utterances": 8,
+    "allSlotsPresent": 8,
+    "criticalSlots": 19,
+    "slotsPresent": 19,
+    "providerErrors": 0,
+    "inputAudioSeconds": 45.11
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-20T16:08:00.363Z",
+  "contextVersion": "speaker-passages-v1",
+  "selectorChanged": false,
+  "providerCalls": 3,
+  "newAudioCalls": 0,
+  "scope": "Known USGS development input; three distinct configurations, one call each. Original-fragment baseline also returned a card. No independent usefulness rating or general reliability estimate.",
+  "checks": [
+    {
+      "mode": "fragments",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "selectorSha256": "434235525d570ec64e4db7253955aa36e6ded653c9a39f8b7c3fb05a2e380521",
+      "outcome": "suggestions",
+      "kinds": [
+        "example"
+      ],
+      "rejected": 0,
+      "elapsedMs": 682
+    },
+    {
+      "mode": "passages",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "selectorSha256": "434235525d570ec64e4db7253955aa36e6ded653c9a39f8b7c3fb05a2e380521",
+      "outcome": "suggestions",
+      "kinds": [
+        "evidence"
+      ],
+      "rejected": 0,
+      "elapsedMs": 703
+    },
+    {
+      "mode": "passages-no-brief",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "selectorSha256": "434235525d570ec64e4db7253955aa36e6ded653c9a39f8b7c3fb05a2e380521",
+      "outcome": "suggestions",
+      "kinds": [
+        "definition"
+      ],
+      "rejected": 0,
+      "elapsedMs": 723
+    }
+  ]
+}

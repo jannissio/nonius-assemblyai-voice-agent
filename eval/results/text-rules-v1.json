@@ -1,0 +1,903 @@
+{
+  "createdAt": "2026-09-19T06:21:12.832Z",
+  "label": "v1",
+  "engine": "local rules",
+  "model": null,
+  "promptVersion": "interview-cues-v1",
+  "protocol": "docs/EVALUATION_PROTOCOL.md",
+  "freeze": "v1 matches",
+  "limitations": "Authored synthetic scenarios. Label matching is not human question-quality assessment or real-world accuracy.",
+  "results": [
+    {
+      "id": "T01",
+      "expected": [
+        "comparison"
+      ],
+      "got": [
+        "comparison"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "comparison:T01-0:0",
+          "kind": "comparison",
+          "title": "Clarify the comparison",
+          "focus": "30 percent faster",
+          "question": "You mentioned “30 percent faster”. What is the baseline for that comparison, and how was it measured?",
+          "evidence": [
+            {
+              "turnId": "T01-0",
+              "quote": "The new train route will be 30 percent faster.",
+              "startChar": 0,
+              "endChar": 46,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "comparison",
+            "focus": "30 percent faster",
+            "evidence": [
+              {
+                "turn_id": "T01-0",
+                "quote": "The new train route will be 30 percent faster."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T02",
+      "expected": [
+        "comparison"
+      ],
+      "got": [
+        "comparison"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "comparison:T02-0:0",
+          "kind": "comparison",
+          "title": "Clarify the comparison",
+          "focus": "12 percent",
+          "question": "You mentioned “12 percent”. What is the baseline for that comparison, and how was it measured?",
+          "evidence": [
+            {
+              "turnId": "T02-0",
+              "quote": "The recycling rate increased by 12 percent.",
+              "startChar": 0,
+              "endChar": 43,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "comparison",
+            "focus": "12 percent",
+            "evidence": [
+              {
+                "turn_id": "T02-0",
+                "quote": "The recycling rate increased by 12 percent."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T03",
+      "expected": [
+        "comparison"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T04",
+      "expected": [
+        "date"
+      ],
+      "got": [
+        "date"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "date:T04-0:0",
+          "kind": "date",
+          "title": "Pin down the date",
+          "focus": "next spring",
+          "question": "You mentioned “next spring”. What exact date or period are you referring to?",
+          "evidence": [
+            {
+              "turnId": "T04-0",
+              "quote": "The scheme will launch next spring.",
+              "startChar": 0,
+              "endChar": 35,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "date",
+            "focus": "next spring",
+            "evidence": [
+              {
+                "turn_id": "T04-0",
+                "quote": "The scheme will launch next spring."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T05",
+      "expected": [
+        "date"
+      ],
+      "got": [
+        "date"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "date:T05-0:0",
+          "kind": "date",
+          "title": "Pin down the date",
+          "focus": "soon",
+          "question": "You mentioned “soon”. What exact date or period are you referring to?",
+          "evidence": [
+            {
+              "turnId": "T05-0",
+              "quote": "We will release the report soon.",
+              "startChar": 0,
+              "endChar": 32,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "date",
+            "focus": "soon",
+            "evidence": [
+              {
+                "turn_id": "T05-0",
+                "quote": "We will release the report soon."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T06",
+      "expected": [
+        "date"
+      ],
+      "got": [
+        "date"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "date:T06-0:0",
+          "kind": "date",
+          "title": "Pin down the date",
+          "focus": "last year",
+          "question": "You mentioned “last year”. What exact date or period are you referring to?",
+          "evidence": [
+            {
+              "turnId": "T06-0",
+              "quote": "The decision was made last year.",
+              "startChar": 0,
+              "endChar": 32,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "date",
+            "focus": "last year",
+            "evidence": [
+              {
+                "turn_id": "T06-0",
+                "quote": "The decision was made last year."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T07",
+      "expected": [
+        "definition"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T08",
+      "expected": [
+        "definition"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T09",
+      "expected": [
+        "definition"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T10",
+      "expected": [
+        "evidence"
+      ],
+      "got": [
+        "evidence"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "evidence:T10-0:0",
+          "kind": "evidence",
+          "title": "Ask for the source",
+          "focus": "Studies show",
+          "question": "You mentioned “Studies show”. Which document, data or first-hand observation supports that claim?",
+          "evidence": [
+            {
+              "turnId": "T10-0",
+              "quote": "Studies show this policy prevents loneliness.",
+              "startChar": 0,
+              "endChar": 45,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "evidence",
+            "focus": "Studies show",
+            "evidence": [
+              {
+                "turn_id": "T10-0",
+                "quote": "Studies show this policy prevents loneliness."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T11",
+      "expected": [
+        "evidence"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T12",
+      "expected": [
+        "evidence"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T13",
+      "expected": [
+        "example"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T14",
+      "expected": [
+        "example"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T15",
+      "expected": [
+        "example"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T16",
+      "expected": [
+        "next_step"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T17",
+      "expected": [
+        "next_step"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T18",
+      "expected": [
+        "next_step"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T19",
+      "expected": [
+        "reconcile"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T20",
+      "expected": [
+        "reconcile"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T21",
+      "expected": [
+        "reconcile"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T22",
+      "expected": [
+        "correction"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T23",
+      "expected": [
+        "correction"
+      ],
+      "got": [
+        "correction"
+      ],
+      "exact": true,
+      "matched": 1,
+      "unexpected": [],
+      "cues": [
+        {
+          "id": "correction:T23-0:0",
+          "kind": "correction",
+          "title": "Confirm the correction",
+          "focus": "Sorry, that was the old date. I meant the revised date.",
+          "question": "You mentioned “Sorry, that was the old date. I meant the revised date.”. Which version should I record as your correction?",
+          "evidence": [
+            {
+              "turnId": "T23-0",
+              "quote": "The opening is in March. Sorry, that was the old date. I meant the revised date.",
+              "startChar": 0,
+              "endChar": 80,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "correction",
+            "focus": "Sorry, that was the old date. I meant the revised date.",
+            "evidence": [
+              {
+                "turn_id": "T23-0",
+                "quote": "The opening is in March. Sorry, that was the old date. I meant the revised date."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "T24",
+      "expected": [
+        "correction"
+      ],
+      "got": [],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N01",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N02",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N03",
+      "expected": [],
+      "got": [
+        "correction"
+      ],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [
+        "correction"
+      ],
+      "cues": [
+        {
+          "id": "correction:N03-0:0",
+          "kind": "correction",
+          "title": "Confirm the correction",
+          "focus": "Sorry, I mean fifty million pounds. Fifty million is the approved total.",
+          "question": "You mentioned “Sorry, I mean fifty million pounds. Fifty million is the approved total.”. Which version should I record as your correction?",
+          "evidence": [
+            {
+              "turnId": "N03-0",
+              "quote": "The budget is fifteen million pounds. Sorry, I mean fifty million pounds. Fifty million is the approved total.",
+              "startChar": 0,
+              "endChar": 110,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "correction",
+            "focus": "Sorry, I mean fifty million pounds. Fifty million is the approved total.",
+            "evidence": [
+              {
+                "turn_id": "N03-0",
+                "quote": "The budget is fifteen million pounds. Sorry, I mean fifty million pounds. Fifty million is the approved total."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N04",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N05",
+      "expected": [],
+      "got": [
+        "correction"
+      ],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [
+        "correction"
+      ],
+      "cues": [
+        {
+          "id": "correction:N05-0:0",
+          "kind": "correction",
+          "title": "Confirm the correction",
+          "focus": "I mean step-free entry and lifts to every platform.",
+          "question": "You mentioned “I mean step-free entry and lifts to every platform.”. Which version should I record as your correction?",
+          "evidence": [
+            {
+              "turnId": "N05-0",
+              "quote": "By accessible, I mean step-free entry and lifts to every platform.",
+              "startChar": 0,
+              "endChar": 66,
+              "speaker": "Source",
+              "start": 0,
+              "end": 1000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "correction",
+            "focus": "I mean step-free entry and lifts to every platform.",
+            "evidence": [
+              {
+                "turn_id": "N05-0",
+                "quote": "By accessible, I mean step-free entry and lifts to every platform."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N06",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N07",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "N08",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "A01",
+      "expected": [],
+      "got": [],
+      "exact": true,
+      "matched": 0,
+      "unexpected": [],
+      "cues": [],
+      "rejected": [],
+      "raw": {
+        "cues": []
+      },
+      "engine": "local rules"
+    },
+    {
+      "id": "A02",
+      "expected": [],
+      "got": [
+        "date"
+      ],
+      "exact": false,
+      "matched": 0,
+      "unexpected": [
+        "date"
+      ],
+      "cues": [
+        {
+          "id": "date:A02-1:0",
+          "kind": "date",
+          "title": "Pin down the date",
+          "focus": "Last year",
+          "question": "You mentioned “Last year”. What exact date or period are you referring to?",
+          "evidence": [
+            {
+              "turnId": "A02-1",
+              "quote": "Last year's budget was twelve million pounds.",
+              "startChar": 0,
+              "endChar": 45,
+              "speaker": "Source",
+              "start": 1000,
+              "end": 2000,
+              "alignment": "turn",
+              "source": "typed"
+            }
+          ],
+          "status": "open"
+        }
+      ],
+      "rejected": [],
+      "raw": {
+        "cues": [
+          {
+            "kind": "date",
+            "focus": "Last year",
+            "evidence": [
+              {
+                "turn_id": "A02-1",
+                "quote": "Last year's budget was twelve million pounds."
+              }
+            ]
+          }
+        ]
+      },
+      "engine": "local rules"
+    }
+  ],
+  "summary": {
+    "cases": 34,
+    "exactMatches": 14,
+    "positiveCases": 24,
+    "positiveCasesWithExpectedCue": 7,
+    "negativeCases": 10,
+    "negativeCasesWithNoCue": 7,
+    "casesWithUnexpectedCue": 3,
+    "providerErrors": 0,
+    "rejectedProposals": 0
+  }
+}

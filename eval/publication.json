@@ -1,0 +1,18 @@
+{
+  "scope": "Public source release; no measurements or benchmark labels changed.",
+  "protocolRedaction": {
+    "path": "docs/EVALUATION_PROTOCOL.md",
+    "originalSha256": "73266a64c9b42e7434a5f0201c6061907065fe2695de3666b25e5757268ccc6e",
+    "publishedSha256": "3f314f8fa9967d04ee38c5f1052c9ee68575ca38e0bf55e8d6fda869b0531982"
+  },
+  "removedResultMetadata": [
+    "budget",
+    "budgetAfter",
+    "budgetBefore",
+    "localRecord",
+    "rateHeaders",
+    "recordSha256",
+    "unsentLocalCooldown",
+    "provider Begin session identifiers"
+  ]
+}

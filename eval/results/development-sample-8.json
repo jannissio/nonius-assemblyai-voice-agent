@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-19T06:55:42Z",
+  "timestampApproximate": true,
+  "developmentOnly": true,
+  "afterTurnId": "sample-8",
+  "error": "AssemblyAI returned invalid analysis JSON.",
+  "rawResponseAvailable": false,
+  "notes": "Observed from the cache-generation process. The adapter rejected the response before returning payload; no quality retry was performed."
+}

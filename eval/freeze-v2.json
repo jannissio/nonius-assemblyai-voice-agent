@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-19T06:27:40.809Z",
+  "amendment": "A: accessible model and development adapter fixes; before first live benchmark",
+  "files": [
+    {
+      "path": "docs/EVALUATION_PROTOCOL.md",
+      "sha256": "73266a64c9b42e7434a5f0201c6061907065fe2695de3666b25e5757268ccc6e"
+    },
+    {
+      "path": "eval/cases.json",
+      "sha256": "f64e02eadc691eaee267b88da660ec2ffacfbbfcf8921fa7301cc378813c4566"
+    },
+    {
+      "path": "fixtures/speech-cases.json",
+      "sha256": "052b8f7d3adae132a7091029f04b422fac1ed898687a965a56ac36df52881257"
+    },
+    {
+      "path": "lib/agent.mjs",
+      "sha256": "fc73672b5e0dfb9fd83731e4e1c76dddca33497adde894d0950d029a0a6d6ab2"
+    },
+    {
+      "path": "lib/evidence.mjs",
+      "sha256": "402eba4b591a76455e17a61a349345eb0aec4bb3527cf6ba194bebaf5268d454"
+    }
+  ]
+}

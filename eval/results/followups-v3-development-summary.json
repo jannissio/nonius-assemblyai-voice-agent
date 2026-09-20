@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-19T15:49:24.341Z",
+  "scope": "Development regression on two known v2 failures and one authored answered control. Inputs were known during design. Not held out, independently labeled or a journalist-benefit study.",
+  "promptVersion": "interview-followups-v3",
+  "selectorSha256": "434235525d570ec64e4db7253955aa36e6ded653c9a39f8b7c3fb05a2e380521",
+  "providerRequests": 3,
+  "qualityRetries": 0,
+  "newAudioRequests": 0,
+  "results": [
+    {
+      "id": "jimmy-wales",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "cues": [
+        {
+          "kind": "date"
+        }
+      ],
+      "rejectedCount": 0,
+      "elapsedMs": 902,
+      "mechanicalCheck": true,
+      "independentlyRated": false,
+      "implementerAssessment": "Weak timing question about a stated hope; can be dismissed."
+    },
+    {
+      "id": "billy-west",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "cues": [
+        {
+          "kind": "example"
+        }
+      ],
+      "rejectedCount": 0,
+      "elapsedMs": 732,
+      "mechanicalCheck": true,
+      "independentlyRated": false,
+      "implementerAssessment": "Plausible concrete-example probe about performance, rather than asking for more names."
+    },
+    {
+      "id": "answered-control",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-followups-v3",
+      "cues": [],
+      "rejectedCount": 0,
+      "elapsedMs": 560,
+      "mechanicalCheck": true,
+      "independentlyRated": false,
+      "implementerAssessment": "Quiet on this single fully answered control."
+    }
+  ],
+  "browserCheck": {
+    "method": "Isolated localhost server replayed saved Billy model output with exact evidence validation; explicitly labeled saved response. No API call.",
+    "verified": [
+      "Blank new brief and question list",
+      "Add, mark covered and remove a prepared question",
+      "Render example card with separate reference and evidence",
+      "Mark Asked; a repeated analysis adds no duplicate and explains why"
+    ],
+    "hardwareMicrophone": false,
+    "finalAudioDiarization": false
+  },
+  "priorBenchmark": {
+    "version": "interview-cues-v2-qwen",
+    "exactCategoryMatches": 29,
+    "cases": 34,
+    "appliesToCurrentSelector": false
+  }
+}

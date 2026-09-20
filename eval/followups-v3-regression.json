@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-19T15:42:01.915Z",
+  "promptVersion": "interview-followups-v3",
+  "purpose": "Development regression on two known v2 failures and one authored answered control. Inputs were known during design. Not held out, independently labeled or a journalist-benefit study.",
+  "maxLiveCalls": 3,
+  "retries": 0,
+  "model": "qwen3.5-4b-32k-fast",
+  "temperature": 0,
+  "selectorSha256": "434235525d570ec64e4db7253955aa36e6ded653c9a39f8b7c3fb05a2e380521",
+  "cases": [
+    {
+      "id": "jimmy-wales",
+      "source": "output/recording-kit/jimmy-wales-demo-analysis.json",
+      "inputRecordSha256": "6d62c034d42c0d9c21f32522690a7425beadb2be896198355a946e121217b66e",
+      "expected": "At least one accepted, source-grounded probing opportunity. Human usefulness remains to be judged."
+    },
+    {
+      "id": "billy-west",
+      "source": "output/recording-kit/billy-west-demo-analysis.json",
+      "inputRecordSha256": "1a630145413c4213e97e2402f5330ad717b37625d763d907e4188b9e8c8c9948",
+      "expected": "At least one accepted, source-grounded probing opportunity. Do not merely ask for more names."
+    },
+    {
+      "id": "answered-control",
+      "input": {
+        "brief": "Understand the repair desk pilot, the waiting-time comparison and the next step.",
+        "goals": [],
+        "turns": [
+          {
+            "id": "answered-r",
+            "speaker": "Reporter",
+            "text": "How did waiting time change, what explains the change, and what will happen next?"
+          },
+          {
+            "id": "answered-s",
+            "speaker": "Source",
+            "text": "Average waiting time fell from 20 minutes in May to 15 minutes in June, a 25 percent reduction. We timed every arrival until a technician started work, with 100 repairs in each month at the same desk. The published pilot report contains those timings. For example, on June 12 a customer brought in a bicycle with a broken chain; the new triage desk sent it straight to the available bicycle technician instead of the general queue. The next step is a second triage desk: Amina Patel will install it on July 1, 2030, and publish its first monthly results on August 5, 2030."
+          }
+        ]
+      },
+      "expected": "No follow-up: the questions have already been answered."
+    }
+  ],
+  "limitations": [
+    "Real inputs are retained locally with the separately licensed recordings, not bundled as MIT source.",
+    "No new audio transcription, automatic diarization test, model comparison or quality retry.",
+    "Literal evidence matching does not establish usefulness."
+  ]
+}

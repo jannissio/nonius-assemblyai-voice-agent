@@ -1,0 +1,226 @@
+{
+  "id": "riverton-transit-v1",
+  "title": "Riverton's new bus service",
+  "brief": "Understand the cost, evidence and opening date of a fictional city's proposed bus service. Distinguish forecasts from observed results.",
+  "goals": [
+    "What is the evidence for the improvement?",
+    "What is the approved budget?",
+    "When will the service open?"
+  ],
+  "disclosure": "Original fictional script, authored for Nonius. Both roles use synthetic speech. This is not a real interview or user study.",
+  "turns": [
+    {
+      "id": "sample-1",
+      "speaker": "Reporter",
+      "text": "What will the new bus service change for people in Riverton?",
+      "start": 0,
+      "end": 3625,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-2",
+      "speaker": "Source",
+      "text": "We expect journeys to be twenty percent faster. That is the main benefit for passengers.",
+      "start": 4275,
+      "end": 11225,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-3",
+      "speaker": "Reporter",
+      "text": "Twenty percent faster compared with what, and is that a forecast or a measured result?",
+      "start": 11875,
+      "end": 17540,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-4",
+      "speaker": "Source",
+      "text": "It is a forecast compared with the March 2025 timetable. We have not measured the results yet.",
+      "start": 18190,
+      "end": 26135,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-5",
+      "speaker": "Reporter",
+      "text": "What is the approved budget?",
+      "start": 26785,
+      "end": 28940,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-6",
+      "speaker": "Source",
+      "text": "The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles.",
+      "start": 29590,
+      "end": 38915,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-7",
+      "speaker": "Reporter",
+      "text": "When should passengers expect the new service to open?",
+      "start": 39565,
+      "end": 43150,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-8",
+      "speaker": "Source",
+      "text": "We are planning to open next spring. The exact date depends on the construction schedule.",
+      "start": 43800,
+      "end": 50605,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-9",
+      "speaker": "Reporter",
+      "text": "Which documents can readers use to check those figures?",
+      "start": 51255,
+      "end": 54995,
+      "words": [],
+      "source": "sample"
+    },
+    {
+      "id": "sample-10",
+      "speaker": "Source",
+      "text": "The transport committee will publish the business case after its next meeting. It will include the forecast assumptions and the full budget.",
+      "start": 55645,
+      "end": 64830,
+      "words": [],
+      "source": "sample"
+    }
+  ],
+  "audio": "/fixtures/demo.wav",
+  "audioSha256": "6a264471d0223474084113f795ccc41f791c136e1afc8745e33bbed0cd13e1a7",
+  "transcriptOrigin": "Authored script aligned to generated clip boundaries; not an AssemblyAI transcript.",
+  "voice": "Microsoft Zira Desktop, two speech rates",
+  "analyses": [
+    {
+      "afterTurnId": "sample-2",
+      "recordedAt": "2026-09-19T06:27:23.287Z",
+      "model": "qwen3.5-4b-32k-fast",
+      "promptVersion": "interview-cues-v2-qwen",
+      "raw": {
+        "cues": [
+          {
+            "kind": "comparison",
+            "focus": "twenty percent faster",
+            "evidence": [
+              {
+                "turn_id": "sample-2",
+                "quote": "We expect journeys to be twenty percent faster."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "afterTurnId": "sample-4",
+      "engine": "AssemblyAI LLM Gateway",
+      "model": "qwen3.5-4b-32k-fast",
+      "raw": {
+        "cues": [
+          {
+            "kind": "comparison",
+            "focus": "twenty percent faster",
+            "evidence": [
+              {
+                "turn_id": "sample-2",
+                "quote": "We expect journeys to be twenty percent faster. That is the main benefit for passengers."
+              },
+              {
+                "turn_id": "sample-4",
+                "quote": "It is a forecast compared with the March 2025 timetable. We have not measured the results yet."
+              }
+            ]
+          }
+        ]
+      },
+      "source": "eval/results/development-sample-4.json"
+    },
+    {
+      "afterTurnId": "sample-6",
+      "engine": "AssemblyAI LLM Gateway",
+      "model": "qwen3.5-4b-32k-fast",
+      "raw": {
+        "cues": [
+          {
+            "kind": "correction",
+            "focus": "fifty million pounds",
+            "evidence": [
+              {
+                "turn_id": "sample-6",
+                "quote": "The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "source": "eval/results/development-sample-6.json"
+    },
+    {
+      "afterTurnId": "sample-8",
+      "error": "AssemblyAI returned invalid analysis JSON.",
+      "source": "eval/results/development-sample-8.json"
+    },
+    {
+      "afterTurnId": "sample-10",
+      "engine": "AssemblyAI LLM Gateway",
+      "model": "qwen3.5-4b-32k-fast",
+      "raw": {
+        "cues": [
+          {
+            "kind": "comparison",
+            "focus": "twenty percent faster",
+            "evidence": [
+              {
+                "turn_id": "sample-2",
+                "quote": "We expect journeys to be twenty percent faster. That is the main benefit for passengers."
+              },
+              {
+                "turn_id": "sample-4",
+                "quote": "It is a forecast compared with the March 2025 timetable. We have not measured the results yet."
+              }
+            ]
+          },
+          {
+            "kind": "date",
+            "focus": "next spring",
+            "evidence": [
+              {
+                "turn_id": "sample-8",
+                "quote": "We are planning to open next spring. The exact date depends on the construction schedule."
+              },
+              {
+                "turn_id": "sample-10",
+                "quote": "The transport committee will publish the business case after its next meeting. It will include the forecast assumptions and the full budget."
+              }
+            ]
+          },
+          {
+            "kind": "evidence",
+            "focus": "fifteen million pounds",
+            "evidence": [
+              {
+                "turn_id": "sample-6",
+                "quote": "The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles."
+              }
+            ]
+          }
+        ]
+      },
+      "source": "eval/results/development-sample-10.json"
+    }
+  ]
+}

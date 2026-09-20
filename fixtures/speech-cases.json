@@ -1,0 +1,17 @@
+{
+  "version":1,
+  "disclosure":"Authored synthetic engineering fixtures. One installed English synthesizer, not independent human speakers. No population accuracy claim.",
+  "cases":[
+    {"id":"asr-01","split":"development","text":"We expect journeys to be twenty percent faster.","slots":[{"name":"percentage","allowed":["20 percent","20%","twenty percent"]}]},
+    {"id":"asr-02","split":"development","text":"The approved budget is fifty million pounds.","slots":[{"name":"budget","allowed":["50 million","fifty million"]}]},
+    {"id":"asr-03","split":"test","text":"The budget is fifteen million pounds, not fifty million pounds.","slots":[{"name":"first amount","allowed":["15 million","fifteen million"]},{"name":"negation","allowed":["not"]},{"name":"second amount","allowed":["50 million","fifty million"]}]},
+    {"id":"asr-04","split":"test","text":"We have not measured the results yet. These are estimates.","slots":[{"name":"negation","allowed":["not"]},{"name":"qualification","allowed":["estimates"]}]},
+    {"id":"asr-05","split":"test","text":"The contract starts on the third of October, twenty twenty seven.","slots":[{"name":"month","allowed":["october"]},{"name":"year","allowed":["2027","twenty twenty seven","twenty twenty-seven"]}]},
+    {"id":"asr-06","split":"test","text":"The total is one point five million euros. Sorry, I mean one point six million euros.","slots":[{"name":"first amount","allowed":["1.5 million","one point five million"]},{"name":"corrected amount","allowed":["1.6 million","one point six million"]}]},
+    {"id":"asr-07","split":"test","text":"That is a projection. We cannot promise a twenty percent reduction.","slots":[{"name":"qualification","allowed":["projection"]},{"name":"negation","allowed":["cannot","can't"]},{"name":"percentage","allowed":["20 percent","20%","twenty percent"]}]},
+    {"id":"asr-08","split":"test","text":"Twenty residents attended the meeting. Two hundred were invited.","slots":[{"name":"attended","allowed":["20 residents","twenty residents"]},{"name":"invited","allowed":["200","two hundred"]}]},
+    {"id":"asr-09","split":"test","text":"The figures refer to 2024, not 2025.","slots":[{"name":"year one","allowed":["2024","twenty twenty four","twenty twenty-four"]},{"name":"negation","allowed":["not"]},{"name":"year two","allowed":["2025","twenty twenty five","twenty twenty-five"]}]},
+    {"id":"asr-10","split":"test","text":"I do not know the final cost. Please check the published accounts.","slots":[{"name":"uncertainty","allowed":["do not know","don't know"]},{"name":"source","allowed":["published accounts"]}]},
+    {"id":"asr-command","split":"development","text":"What should I ask next?","slots":[{"name":"intent","allowed":["ask next"]}]}
+  ]
+}

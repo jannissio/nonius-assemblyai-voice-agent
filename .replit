@@ -1,0 +1,13 @@
+entrypoint = "scripts/start-hosted.mjs"
+run = ["npm", "run", "host"]
+modules = ["nodejs-22"]
+
+[deployment]
+build = ["npm", "ci", "--ignore-scripts"]
+run = ["npm", "run", "host"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 4317
+externalPort = 80
+

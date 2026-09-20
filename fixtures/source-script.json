@@ -1,0 +1,19 @@
+{
+  "id": "riverton-transit-v1",
+  "title": "Riverton's new bus service",
+  "brief": "Understand the cost, evidence and opening date of a fictional city's proposed bus service. Distinguish forecasts from observed results.",
+  "goals": ["What is the evidence for the improvement?", "What is the approved budget?", "When will the service open?"],
+  "disclosure": "Original fictional script, authored for Nonius. Both roles use synthetic speech. This is not a real interview or user study.",
+  "turns": [
+    {"id":"sample-1","speaker":"Reporter","text":"What will the new bus service change for people in Riverton?"},
+    {"id":"sample-2","speaker":"Source","text":"We expect journeys to be twenty percent faster. That is the main benefit for passengers."},
+    {"id":"sample-3","speaker":"Reporter","text":"Twenty percent faster compared with what, and is that a forecast or a measured result?"},
+    {"id":"sample-4","speaker":"Source","text":"It is a forecast compared with the March 2025 timetable. We have not measured the results yet."},
+    {"id":"sample-5","speaker":"Reporter","text":"What is the approved budget?"},
+    {"id":"sample-6","speaker":"Source","text":"The approved budget is fifteen million pounds. Sorry, I mean fifty million pounds, including the new vehicles."},
+    {"id":"sample-7","speaker":"Reporter","text":"When should passengers expect the new service to open?"},
+    {"id":"sample-8","speaker":"Source","text":"We are planning to open next spring. The exact date depends on the construction schedule."},
+    {"id":"sample-9","speaker":"Reporter","text":"Which documents can readers use to check those figures?"},
+    {"id":"sample-10","speaker":"Source","text":"The transport committee will publish the business case after its next meeting. It will include the forecast assumptions and the full budget."}
+  ]
+}

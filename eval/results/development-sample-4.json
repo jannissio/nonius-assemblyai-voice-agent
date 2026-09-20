@@ -1,0 +1,83 @@
+{
+  "at": "2026-09-19T06:54:31.515Z",
+  "developmentOnly": true,
+  "afterTurnId": "sample-4",
+  "cues": [
+    {
+      "id": "comparison:sample-2:0:sample-4:0",
+      "kind": "comparison",
+      "title": "Clarify the comparison",
+      "focus": "twenty percent faster",
+      "question": "You mentioned “twenty percent faster”. What is the baseline for that comparison, and how was it measured?",
+      "evidence": [
+        {
+          "turnId": "sample-2",
+          "quote": "We expect journeys to be twenty percent faster. That is the main benefit for passengers.",
+          "startChar": 0,
+          "endChar": 88,
+          "speaker": "Source",
+          "start": 4275,
+          "end": 11225,
+          "alignment": "turn",
+          "source": "sample"
+        },
+        {
+          "turnId": "sample-4",
+          "quote": "It is a forecast compared with the March 2025 timetable. We have not measured the results yet.",
+          "startChar": 0,
+          "endChar": 94,
+          "speaker": "Source",
+          "start": 18190,
+          "end": 26135,
+          "alignment": "turn",
+          "source": "sample"
+        }
+      ],
+      "status": "open"
+    }
+  ],
+  "rejected": [],
+  "engine": "AssemblyAI LLM Gateway",
+  "model": "qwen3.5-4b-32k-fast",
+  "promptVersion": "interview-cues-v2-qwen",
+  "elapsedMs": 761,
+  "usage": {
+    "input_tokens": 835,
+    "prompt_tokens": 835,
+    "output_tokens": 80,
+    "completion_tokens": 80,
+    "total_tokens": 915,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      }
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "raw": {
+    "cues": [
+      {
+        "kind": "comparison",
+        "focus": "twenty percent faster",
+        "evidence": [
+          {
+            "turn_id": "sample-2",
+            "quote": "We expect journeys to be twenty percent faster. That is the main benefit for passengers."
+          },
+          {
+            "turn_id": "sample-4",
+            "quote": "It is a forecast compared with the March 2025 timetable. We have not measured the results yet."
+          }
+        ]
+      }
+    ]
+  }
+}

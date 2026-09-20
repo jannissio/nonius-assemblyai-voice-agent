@@ -1,0 +1,3263 @@
+{
+  "source": "https://www.usgs.gov/media/audio/us-using-less-water-it-did-35-years-ago",
+  "rights": "USGS public domain interview (2009); captured machine predictions are uncorrected.",
+  "recordedAt": "2026-09-20T15:08:43.661Z",
+  "audioSha256": "3e047022026cfc15cdf7f700355681a252259ed77e9d99efd4d4434c6e2b65db",
+  "audioSeconds": 52.24,
+  "model": "universal-3-5-pro",
+  "events": [
+    {
+      "ms": 1876,
+      "event": {
+        "type": "Turn",
+        "turn_order": 0,
+        "end_of_turn": false,
+        "transcript": "What does this",
+        "words": [
+          {
+            "text": "What",
+            "start": 0,
+            "end": 258,
+            "word_is_final": false
+          },
+          {
+            "text": "does",
+            "start": 270,
+            "end": 528,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 540,
+            "end": 798,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 4999,
+      "event": {
+        "type": "Turn",
+        "turn_order": 0,
+        "end_of_turn": false,
+        "transcript": "What does this water use report tell us? Well, we put out",
+        "words": [
+          {
+            "text": "What",
+            "start": 0,
+            "end": 313,
+            "word_is_final": false
+          },
+          {
+            "text": "does",
+            "start": 328,
+            "end": 641,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 656,
+            "end": 969,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 984,
+            "end": 1375,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 1390,
+            "end": 1625,
+            "word_is_final": false
+          },
+          {
+            "text": "report",
+            "start": 1640,
+            "end": 2110,
+            "word_is_final": false
+          },
+          {
+            "text": "tell",
+            "start": 2125,
+            "end": 2438,
+            "word_is_final": false
+          },
+          {
+            "text": "us?",
+            "start": 2453,
+            "end": 2688,
+            "word_is_final": false
+          },
+          {
+            "text": "Well,",
+            "start": 2703,
+            "end": 3094,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 3109,
+            "end": 3265,
+            "word_is_final": false
+          },
+          {
+            "text": "put",
+            "start": 3280,
+            "end": 3515,
+            "word_is_final": false
+          },
+          {
+            "text": "out",
+            "start": 3530,
+            "end": 3765,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 8228,
+      "event": {
+        "type": "Turn",
+        "turn_order": 0,
+        "end_of_turn": false,
+        "transcript": "What does this water use report tell us? Well, we put out water use reports once every 5 years to tell us",
+        "words": [
+          {
+            "text": "What",
+            "start": 0,
+            "end": 303,
+            "word_is_final": false
+          },
+          {
+            "text": "does",
+            "start": 318,
+            "end": 621,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 636,
+            "end": 939,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 954,
+            "end": 1333,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 1348,
+            "end": 1575,
+            "word_is_final": false
+          },
+          {
+            "text": "report",
+            "start": 1590,
+            "end": 2044,
+            "word_is_final": false
+          },
+          {
+            "text": "tell",
+            "start": 2059,
+            "end": 2362,
+            "word_is_final": false
+          },
+          {
+            "text": "us?",
+            "start": 2377,
+            "end": 2604,
+            "word_is_final": false
+          },
+          {
+            "text": "Well,",
+            "start": 2619,
+            "end": 2998,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 3013,
+            "end": 3164,
+            "word_is_final": false
+          },
+          {
+            "text": "put",
+            "start": 3179,
+            "end": 3406,
+            "word_is_final": false
+          },
+          {
+            "text": "out",
+            "start": 3421,
+            "end": 3648,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 3663,
+            "end": 4042,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 4057,
+            "end": 4284,
+            "word_is_final": false
+          },
+          {
+            "text": "reports",
+            "start": 4299,
+            "end": 4829,
+            "word_is_final": false
+          },
+          {
+            "text": "once",
+            "start": 4844,
+            "end": 5147,
+            "word_is_final": false
+          },
+          {
+            "text": "every",
+            "start": 5162,
+            "end": 5541,
+            "word_is_final": false
+          },
+          {
+            "text": "5",
+            "start": 5556,
+            "end": 5631,
+            "word_is_final": false
+          },
+          {
+            "text": "years",
+            "start": 5646,
+            "end": 6025,
+            "word_is_final": false
+          },
+          {
+            "text": "to",
+            "start": 6040,
+            "end": 6191,
+            "word_is_final": false
+          },
+          {
+            "text": "tell",
+            "start": 6206,
+            "end": 6509,
+            "word_is_final": false
+          },
+          {
+            "text": "us",
+            "start": 6524,
+            "end": 6675,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 11551,
+      "event": {
+        "type": "Turn",
+        "turn_order": 0,
+        "end_of_turn": false,
+        "transcript": "What does this water use report tell us? Well, we put out water use reports once every 5 years to tell us where we stand in terms of how people are using water.",
+        "words": [
+          {
+            "text": "What",
+            "start": 0,
+            "end": 291,
+            "word_is_final": false
+          },
+          {
+            "text": "does",
+            "start": 305,
+            "end": 596,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 610,
+            "end": 901,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 915,
+            "end": 1279,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 1293,
+            "end": 1511,
+            "word_is_final": false
+          },
+          {
+            "text": "report",
+            "start": 1525,
+            "end": 1962,
+            "word_is_final": false
+          },
+          {
+            "text": "tell",
+            "start": 1976,
+            "end": 2267,
+            "word_is_final": false
+          },
+          {
+            "text": "us?",
+            "start": 2281,
+            "end": 2499,
+            "word_is_final": false
+          },
+          {
+            "text": "Well,",
+            "start": 2513,
+            "end": 2877,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 2891,
+            "end": 3036,
+            "word_is_final": false
+          },
+          {
+            "text": "put",
+            "start": 3050,
+            "end": 3268,
+            "word_is_final": false
+          },
+          {
+            "text": "out",
+            "start": 3282,
+            "end": 3500,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 3514,
+            "end": 3878,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 3892,
+            "end": 4110,
+            "word_is_final": false
+          },
+          {
+            "text": "reports",
+            "start": 4124,
+            "end": 4633,
+            "word_is_final": false
+          },
+          {
+            "text": "once",
+            "start": 4647,
+            "end": 4938,
+            "word_is_final": false
+          },
+          {
+            "text": "every",
+            "start": 4952,
+            "end": 5316,
+            "word_is_final": false
+          },
+          {
+            "text": "5",
+            "start": 5330,
+            "end": 5402,
+            "word_is_final": false
+          },
+          {
+            "text": "years",
+            "start": 5416,
+            "end": 5780,
+            "word_is_final": false
+          },
+          {
+            "text": "to",
+            "start": 5794,
+            "end": 5939,
+            "word_is_final": false
+          },
+          {
+            "text": "tell",
+            "start": 5953,
+            "end": 6244,
+            "word_is_final": false
+          },
+          {
+            "text": "us",
+            "start": 6258,
+            "end": 6403,
+            "word_is_final": false
+          },
+          {
+            "text": "where",
+            "start": 6417,
+            "end": 6781,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 6795,
+            "end": 6940,
+            "word_is_final": false
+          },
+          {
+            "text": "stand",
+            "start": 6954,
+            "end": 7318,
+            "word_is_final": false
+          },
+          {
+            "text": "in",
+            "start": 7332,
+            "end": 7477,
+            "word_is_final": false
+          },
+          {
+            "text": "terms",
+            "start": 7491,
+            "end": 7855,
+            "word_is_final": false
+          },
+          {
+            "text": "of",
+            "start": 7869,
+            "end": 8014,
+            "word_is_final": false
+          },
+          {
+            "text": "how",
+            "start": 8028,
+            "end": 8246,
+            "word_is_final": false
+          },
+          {
+            "text": "people",
+            "start": 8260,
+            "end": 8697,
+            "word_is_final": false
+          },
+          {
+            "text": "are",
+            "start": 8711,
+            "end": 8929,
+            "word_is_final": false
+          },
+          {
+            "text": "using",
+            "start": 8943,
+            "end": 9307,
+            "word_is_final": false
+          },
+          {
+            "text": "water.",
+            "start": 9321,
+            "end": 9758,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 11879,
+      "event": {
+        "type": "Turn",
+        "turn_order": 0,
+        "end_of_turn": true,
+        "transcript": "What does this water use report tell us? Well, we put out water use reports once every 5 years to tell us where we stand in terms of how people are using water",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "What",
+            "start": 258,
+            "end": 371,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "does",
+            "start": 436,
+            "end": 549,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "this",
+            "start": 662,
+            "end": 775,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "water",
+            "start": 920,
+            "end": 1179,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "use",
+            "start": 1308,
+            "end": 1437,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "report",
+            "start": 1550,
+            "end": 1906,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "tell",
+            "start": 1970,
+            "end": 2148,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "us?",
+            "start": 2293,
+            "end": 2326,
+            "speaker": "A",
+            "word_is_final": true
+          },
+          {
+            "text": "Well,",
+            "start": 2940,
+            "end": 3053,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "we",
+            "start": 3344,
+            "end": 3440,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "put",
+            "start": 3489,
+            "end": 3618,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "out",
+            "start": 3731,
+            "end": 3780,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "water",
+            "start": 4151,
+            "end": 4329,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "use",
+            "start": 4394,
+            "end": 4507,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "reports",
+            "start": 4620,
+            "end": 4991,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "once",
+            "start": 5040,
+            "end": 5218,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "every",
+            "start": 5282,
+            "end": 5444,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "5",
+            "start": 5508,
+            "end": 5848,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "years",
+            "start": 5912,
+            "end": 6187,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "to",
+            "start": 6251,
+            "end": 6332,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "tell",
+            "start": 6397,
+            "end": 6526,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "us",
+            "start": 6575,
+            "end": 6688,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "where",
+            "start": 7124,
+            "end": 7318,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "we",
+            "start": 7366,
+            "end": 7398,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "stand",
+            "start": 7463,
+            "end": 7883,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "in",
+            "start": 8368,
+            "end": 8448,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "terms",
+            "start": 8497,
+            "end": 8788,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of",
+            "start": 8852,
+            "end": 8917,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "how",
+            "start": 8982,
+            "end": 9079,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "people",
+            "start": 9159,
+            "end": 9434,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "are",
+            "start": 9482,
+            "end": 9563,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "using",
+            "start": 9563,
+            "end": 9822,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "water",
+            "start": 9886,
+            "end": 9983,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 12519,
+      "event": {
+        "type": "Turn",
+        "turn_order": 1,
+        "end_of_turn": false,
+        "transcript": "all across the",
+        "words": [
+          {
+            "text": "all",
+            "start": 10016,
+            "end": 10201,
+            "word_is_final": false
+          },
+          {
+            "text": "across",
+            "start": 10213,
+            "end": 10584,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 10596,
+            "end": 10781,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 15759,
+      "event": {
+        "type": "Turn",
+        "turn_order": 1,
+        "end_of_turn": false,
+        "transcript": "all across the United States. We give national totals",
+        "words": [
+          {
+            "text": "all",
+            "start": 10016,
+            "end": 10252,
+            "word_is_final": false
+          },
+          {
+            "text": "across",
+            "start": 10267,
+            "end": 10740,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 10755,
+            "end": 10991,
+            "word_is_final": false
+          },
+          {
+            "text": "United",
+            "start": 11006,
+            "end": 11479,
+            "word_is_final": false
+          },
+          {
+            "text": "States.",
+            "start": 11494,
+            "end": 12046,
+            "word_is_final": false
+          },
+          {
+            "text": "We",
+            "start": 12061,
+            "end": 12218,
+            "word_is_final": false
+          },
+          {
+            "text": "give",
+            "start": 12233,
+            "end": 12548,
+            "word_is_final": false
+          },
+          {
+            "text": "national",
+            "start": 12563,
+            "end": 13194,
+            "word_is_final": false
+          },
+          {
+            "text": "totals",
+            "start": 13209,
+            "end": 13682,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 19067,
+      "event": {
+        "type": "Turn",
+        "turn_order": 1,
+        "end_of_turn": false,
+        "transcript": "all across the United States. We give national totals, but we also divvy it up and look at how it's",
+        "words": [
+          {
+            "text": "all",
+            "start": 10016,
+            "end": 10258,
+            "word_is_final": false
+          },
+          {
+            "text": "across",
+            "start": 10274,
+            "end": 10759,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 10775,
+            "end": 11017,
+            "word_is_final": false
+          },
+          {
+            "text": "United",
+            "start": 11033,
+            "end": 11518,
+            "word_is_final": false
+          },
+          {
+            "text": "States.",
+            "start": 11534,
+            "end": 12100,
+            "word_is_final": false
+          },
+          {
+            "text": "We",
+            "start": 12116,
+            "end": 12277,
+            "word_is_final": false
+          },
+          {
+            "text": "give",
+            "start": 12293,
+            "end": 12616,
+            "word_is_final": false
+          },
+          {
+            "text": "national",
+            "start": 12632,
+            "end": 13279,
+            "word_is_final": false
+          },
+          {
+            "text": "totals,",
+            "start": 13295,
+            "end": 13861,
+            "word_is_final": false
+          },
+          {
+            "text": "but",
+            "start": 13877,
+            "end": 14119,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 14135,
+            "end": 14296,
+            "word_is_final": false
+          },
+          {
+            "text": "also",
+            "start": 14312,
+            "end": 14635,
+            "word_is_final": false
+          },
+          {
+            "text": "divvy",
+            "start": 14651,
+            "end": 15055,
+            "word_is_final": false
+          },
+          {
+            "text": "it",
+            "start": 15071,
+            "end": 15232,
+            "word_is_final": false
+          },
+          {
+            "text": "up",
+            "start": 15248,
+            "end": 15409,
+            "word_is_final": false
+          },
+          {
+            "text": "and",
+            "start": 15425,
+            "end": 15667,
+            "word_is_final": false
+          },
+          {
+            "text": "look",
+            "start": 15683,
+            "end": 16006,
+            "word_is_final": false
+          },
+          {
+            "text": "at",
+            "start": 16022,
+            "end": 16183,
+            "word_is_final": false
+          },
+          {
+            "text": "how",
+            "start": 16199,
+            "end": 16441,
+            "word_is_final": false
+          },
+          {
+            "text": "it's",
+            "start": 16457,
+            "end": 16780,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 22272,
+      "event": {
+        "type": "Turn",
+        "turn_order": 1,
+        "end_of_turn": false,
+        "transcript": "all across the United States. We give national totals, but we also divvy it up and look at how it's used on a basis of states and",
+        "words": [
+          {
+            "text": "all",
+            "start": 10016,
+            "end": 10286,
+            "word_is_final": false
+          },
+          {
+            "text": "across",
+            "start": 10304,
+            "end": 10845,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 10863,
+            "end": 11133,
+            "word_is_final": false
+          },
+          {
+            "text": "United",
+            "start": 11151,
+            "end": 11692,
+            "word_is_final": false
+          },
+          {
+            "text": "States.",
+            "start": 11710,
+            "end": 12341,
+            "word_is_final": false
+          },
+          {
+            "text": "We",
+            "start": 12359,
+            "end": 12539,
+            "word_is_final": false
+          },
+          {
+            "text": "give",
+            "start": 12557,
+            "end": 12917,
+            "word_is_final": false
+          },
+          {
+            "text": "national",
+            "start": 12935,
+            "end": 13656,
+            "word_is_final": false
+          },
+          {
+            "text": "totals,",
+            "start": 13674,
+            "end": 14305,
+            "word_is_final": false
+          },
+          {
+            "text": "but",
+            "start": 14323,
+            "end": 14593,
+            "word_is_final": false
+          },
+          {
+            "text": "we",
+            "start": 14611,
+            "end": 14791,
+            "word_is_final": false
+          },
+          {
+            "text": "also",
+            "start": 14809,
+            "end": 15169,
+            "word_is_final": false
+          },
+          {
+            "text": "divvy",
+            "start": 15187,
+            "end": 15638,
+            "word_is_final": false
+          },
+          {
+            "text": "it",
+            "start": 15656,
+            "end": 15836,
+            "word_is_final": false
+          },
+          {
+            "text": "up",
+            "start": 15854,
+            "end": 16034,
+            "word_is_final": false
+          },
+          {
+            "text": "and",
+            "start": 16052,
+            "end": 16322,
+            "word_is_final": false
+          },
+          {
+            "text": "look",
+            "start": 16340,
+            "end": 16700,
+            "word_is_final": false
+          },
+          {
+            "text": "at",
+            "start": 16718,
+            "end": 16898,
+            "word_is_final": false
+          },
+          {
+            "text": "how",
+            "start": 16916,
+            "end": 17186,
+            "word_is_final": false
+          },
+          {
+            "text": "it's",
+            "start": 17204,
+            "end": 17564,
+            "word_is_final": false
+          },
+          {
+            "text": "used",
+            "start": 17582,
+            "end": 17942,
+            "word_is_final": false
+          },
+          {
+            "text": "on",
+            "start": 17960,
+            "end": 18140,
+            "word_is_final": false
+          },
+          {
+            "text": "a",
+            "start": 18158,
+            "end": 18248,
+            "word_is_final": false
+          },
+          {
+            "text": "basis",
+            "start": 18266,
+            "end": 18717,
+            "word_is_final": false
+          },
+          {
+            "text": "of",
+            "start": 18735,
+            "end": 18915,
+            "word_is_final": false
+          },
+          {
+            "text": "states",
+            "start": 18933,
+            "end": 19474,
+            "word_is_final": false
+          },
+          {
+            "text": "and",
+            "start": 19492,
+            "end": 19762,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 22628,
+      "event": {
+        "type": "Turn",
+        "turn_order": 1,
+        "end_of_turn": true,
+        "transcript": "all across the United States. We give national totals, but we also divvy it up and look at how it's used on a basis of states and what we",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "all",
+            "start": 10193,
+            "end": 10242,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "across",
+            "start": 10355,
+            "end": 10629,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "the",
+            "start": 10694,
+            "end": 10726,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "United",
+            "start": 10759,
+            "end": 11098,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "States.",
+            "start": 11098,
+            "end": 11453,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "We",
+            "start": 11970,
+            "end": 12003,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "give",
+            "start": 12067,
+            "end": 12229,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "national",
+            "start": 12229,
+            "end": 12907,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "totals,",
+            "start": 13182,
+            "end": 13618,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "but",
+            "start": 14087,
+            "end": 14183,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "we",
+            "start": 14183,
+            "end": 14264,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "also",
+            "start": 14393,
+            "end": 14668,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "divvy",
+            "start": 15137,
+            "end": 15314,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "it",
+            "start": 15379,
+            "end": 15411,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "up",
+            "start": 15524,
+            "end": 15637,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "and",
+            "start": 15702,
+            "end": 15750,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "look",
+            "start": 16009,
+            "end": 16122,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "at",
+            "start": 16170,
+            "end": 16461,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "how",
+            "start": 16574,
+            "end": 16671,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "it's",
+            "start": 16752,
+            "end": 16833,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "used",
+            "start": 16897,
+            "end": 17237,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "on",
+            "start": 17301,
+            "end": 17350,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "a",
+            "start": 17463,
+            "end": 17479,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "basis",
+            "start": 18044,
+            "end": 18400,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of",
+            "start": 18594,
+            "end": 18707,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "states",
+            "start": 18836,
+            "end": 19288,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "and",
+            "start": 19498,
+            "end": 19611,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "what",
+            "start": 19741,
+            "end": 19821,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "we",
+            "start": 19902,
+            "end": 19983,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 23304,
+      "event": {
+        "type": "Turn",
+        "turn_order": 2,
+        "end_of_turn": false,
+        "transcript": "find in this report.",
+        "words": [
+          {
+            "text": "find",
+            "start": 20032,
+            "end": 20206,
+            "word_is_final": false
+          },
+          {
+            "text": "in",
+            "start": 20214,
+            "end": 20301,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 20309,
+            "end": 20483,
+            "word_is_final": false
+          },
+          {
+            "text": "report.",
+            "start": 20491,
+            "end": 20796,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 26566,
+      "event": {
+        "type": "Turn",
+        "turn_order": 2,
+        "end_of_turn": false,
+        "transcript": "find in this report, which is keyed on the year of— year 2005,",
+        "words": [
+          {
+            "text": "find",
+            "start": 20032,
+            "end": 20317,
+            "word_is_final": false
+          },
+          {
+            "text": "in",
+            "start": 20331,
+            "end": 20473,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 20487,
+            "end": 20772,
+            "word_is_final": false
+          },
+          {
+            "text": "report,",
+            "start": 20786,
+            "end": 21286,
+            "word_is_final": false
+          },
+          {
+            "text": "which",
+            "start": 21300,
+            "end": 21657,
+            "word_is_final": false
+          },
+          {
+            "text": "is",
+            "start": 21671,
+            "end": 21813,
+            "word_is_final": false
+          },
+          {
+            "text": "keyed",
+            "start": 21827,
+            "end": 22184,
+            "word_is_final": false
+          },
+          {
+            "text": "on",
+            "start": 22198,
+            "end": 22340,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 22354,
+            "end": 22568,
+            "word_is_final": false
+          },
+          {
+            "text": "year",
+            "start": 22582,
+            "end": 22867,
+            "word_is_final": false
+          },
+          {
+            "text": "of—",
+            "start": 22881,
+            "end": 23095,
+            "word_is_final": false
+          },
+          {
+            "text": "year",
+            "start": 23109,
+            "end": 23394,
+            "word_is_final": false
+          },
+          {
+            "text": "2005,",
+            "start": 23408,
+            "end": 23765,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 29880,
+      "event": {
+        "type": "Turn",
+        "turn_order": 2,
+        "end_of_turn": false,
+        "transcript": "find in this report, which is keyed on the year of— year 2005, is that really water use has been quite",
+        "words": [
+          {
+            "text": "find",
+            "start": 20032,
+            "end": 20350,
+            "word_is_final": false
+          },
+          {
+            "text": "in",
+            "start": 20365,
+            "end": 20524,
+            "word_is_final": false
+          },
+          {
+            "text": "this",
+            "start": 20539,
+            "end": 20857,
+            "word_is_final": false
+          },
+          {
+            "text": "report,",
+            "start": 20872,
+            "end": 21429,
+            "word_is_final": false
+          },
+          {
+            "text": "which",
+            "start": 21444,
+            "end": 21842,
+            "word_is_final": false
+          },
+          {
+            "text": "is",
+            "start": 21857,
+            "end": 22016,
+            "word_is_final": false
+          },
+          {
+            "text": "keyed",
+            "start": 22031,
+            "end": 22429,
+            "word_is_final": false
+          },
+          {
+            "text": "on",
+            "start": 22444,
+            "end": 22603,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 22618,
+            "end": 22856,
+            "word_is_final": false
+          },
+          {
+            "text": "year",
+            "start": 22871,
+            "end": 23189,
+            "word_is_final": false
+          },
+          {
+            "text": "of—",
+            "start": 23204,
+            "end": 23442,
+            "word_is_final": false
+          },
+          {
+            "text": "year",
+            "start": 23457,
+            "end": 23775,
+            "word_is_final": false
+          },
+          {
+            "text": "2005,",
+            "start": 23790,
+            "end": 24188,
+            "word_is_final": false
+          },
+          {
+            "text": "is",
+            "start": 24203,
+            "end": 24362,
+            "word_is_final": false
+          },
+          {
+            "text": "that",
+            "start": 24377,
+            "end": 24695,
+            "word_is_final": false
+          },
+          {
+            "text": "really",
+            "start": 24710,
+            "end": 25187,
+            "word_is_final": false
+          },
+          {
+            "text": "water",
+            "start": 25202,
+            "end": 25600,
+            "word_is_final": false
+          },
+          {
+            "text": "use",
+            "start": 25615,
+            "end": 25853,
+            "word_is_final": false
+          },
+          {
+            "text": "has",
+            "start": 25868,
+            "end": 26106,
+            "word_is_final": false
+          },
+          {
+            "text": "been",
+            "start": 26121,
+            "end": 26439,
+            "word_is_final": false
+          },
+          {
+            "text": "quite",
+            "start": 26454,
+            "end": 26852,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 33363,
+      "event": {
+        "type": "Turn",
+        "turn_order": 2,
+        "end_of_turn": true,
+        "transcript": "find in this report, which is keyed on the year of— year 2005, is that really water use has been quite stable across the United States over the",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "find",
+            "start": 20064,
+            "end": 20322,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "in",
+            "start": 20387,
+            "end": 20419,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "this",
+            "start": 20468,
+            "end": 20565,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "report,",
+            "start": 20629,
+            "end": 21114,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "which",
+            "start": 21178,
+            "end": 21275,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "is",
+            "start": 21356,
+            "end": 21453,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "keyed",
+            "start": 21599,
+            "end": 21857,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "on",
+            "start": 21986,
+            "end": 22019,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "the",
+            "start": 22083,
+            "end": 22115,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "year",
+            "start": 22229,
+            "end": 22342,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of—",
+            "start": 22406,
+            "end": 22649,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "year",
+            "start": 22972,
+            "end": 23085,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "2005,",
+            "start": 23198,
+            "end": 24119,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "is",
+            "start": 24894,
+            "end": 24943,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "that",
+            "start": 24991,
+            "end": 25104,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "really",
+            "start": 25136,
+            "end": 25314,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "water",
+            "start": 25379,
+            "end": 25589,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "use",
+            "start": 25637,
+            "end": 25831,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "has",
+            "start": 25880,
+            "end": 25993,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "been",
+            "start": 26122,
+            "end": 26235,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "quite",
+            "start": 26364,
+            "end": 26623,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "stable",
+            "start": 26687,
+            "end": 27204,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "across",
+            "start": 27398,
+            "end": 27689,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "the",
+            "start": 27802,
+            "end": 27850,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "United",
+            "start": 27883,
+            "end": 28222,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "States",
+            "start": 28222,
+            "end": 28577,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "over",
+            "start": 29902,
+            "end": 29951,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "the",
+            "start": 29983,
+            "end": 30015,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 34079,
+      "event": {
+        "type": "Turn",
+        "turn_order": 3,
+        "end_of_turn": false,
+        "transcript": "last actually",
+        "words": [
+          {
+            "text": "last",
+            "start": 30048,
+            "end": 30320,
+            "word_is_final": false
+          },
+          {
+            "text": "actually",
+            "start": 30333,
+            "end": 30878,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 37420,
+      "event": {
+        "type": "Turn",
+        "turn_order": 3,
+        "end_of_turn": false,
+        "transcript": "last, actually several decades, since about the mid-'80s.",
+        "words": [
+          {
+            "text": "last,",
+            "start": 30048,
+            "end": 30421,
+            "word_is_final": false
+          },
+          {
+            "text": "actually",
+            "start": 30435,
+            "end": 31032,
+            "word_is_final": false
+          },
+          {
+            "text": "several",
+            "start": 31046,
+            "end": 31568,
+            "word_is_final": false
+          },
+          {
+            "text": "decades,",
+            "start": 31582,
+            "end": 32179,
+            "word_is_final": false
+          },
+          {
+            "text": "since",
+            "start": 32193,
+            "end": 32566,
+            "word_is_final": false
+          },
+          {
+            "text": "about",
+            "start": 32580,
+            "end": 32953,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 32967,
+            "end": 33191,
+            "word_is_final": false
+          },
+          {
+            "text": "mid-'80s.",
+            "start": 33205,
+            "end": 33877,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 40688,
+      "event": {
+        "type": "Turn",
+        "turn_order": 3,
+        "end_of_turn": false,
+        "transcript": "last, actually several decades, since about the mid-'80s. The nation withdraws about 410 billion",
+        "words": [
+          {
+            "text": "last,",
+            "start": 30048,
+            "end": 30448,
+            "word_is_final": false
+          },
+          {
+            "text": "actually",
+            "start": 30464,
+            "end": 31104,
+            "word_is_final": false
+          },
+          {
+            "text": "several",
+            "start": 31120,
+            "end": 31680,
+            "word_is_final": false
+          },
+          {
+            "text": "decades,",
+            "start": 31696,
+            "end": 32336,
+            "word_is_final": false
+          },
+          {
+            "text": "since",
+            "start": 32352,
+            "end": 32752,
+            "word_is_final": false
+          },
+          {
+            "text": "about",
+            "start": 32768,
+            "end": 33168,
+            "word_is_final": false
+          },
+          {
+            "text": "the",
+            "start": 33184,
+            "end": 33424,
+            "word_is_final": false
+          },
+          {
+            "text": "mid-'80s.",
+            "start": 33440,
+            "end": 34160,
+            "word_is_final": false
+          },
+          {
+            "text": "The",
+            "start": 34176,
+            "end": 34416,
+            "word_is_final": false
+          },
+          {
+            "text": "nation",
+            "start": 34432,
+            "end": 34912,
+            "word_is_final": false
+          },
+          {
+            "text": "withdraws",
+            "start": 34928,
+            "end": 35648,
+            "word_is_final": false
+          },
+          {
+            "text": "about",
+            "start": 35664,
+            "end": 36064,
+            "word_is_final": false
+          },
+          {
+            "text": "410",
+            "start": 36080,
+            "end": 36320,
+            "word_is_final": false
+          },
+          {
+            "text": "billion",
+            "start": 36336,
+            "end": 36896,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 44204,
+      "event": {
+        "type": "Turn",
+        "turn_order": 3,
+        "end_of_turn": true,
+        "transcript": "last, actually several decades, since about the mid-'80s. The nation withdraws about 410 billion gallons per day for all types of use.",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "last,",
+            "start": 30048,
+            "end": 30419,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "actually",
+            "start": 30548,
+            "end": 30823,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "several",
+            "start": 30823,
+            "end": 31162,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "decades,",
+            "start": 31211,
+            "end": 31728,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "since",
+            "start": 31760,
+            "end": 32035,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "about",
+            "start": 32196,
+            "end": 32503,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "the",
+            "start": 32519,
+            "end": 32584,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "mid-'80s.",
+            "start": 32600,
+            "end": 33004,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "The",
+            "start": 34522,
+            "end": 34555,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "nation",
+            "start": 34603,
+            "end": 35007,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "withdraws",
+            "start": 35072,
+            "end": 35605,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "about",
+            "start": 35734,
+            "end": 35976,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "410",
+            "start": 35976,
+            "end": 36800,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "billion",
+            "start": 37091,
+            "end": 37382,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "gallons",
+            "start": 37511,
+            "end": 37947,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "per",
+            "start": 38060,
+            "end": 38109,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "day",
+            "start": 38238,
+            "end": 38319,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "for",
+            "start": 38787,
+            "end": 38917,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "all",
+            "start": 39046,
+            "end": 39159,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "types",
+            "start": 39514,
+            "end": 39805,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of",
+            "start": 39870,
+            "end": 39950,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "use.",
+            "start": 39950,
+            "end": 39999,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 44891,
+      "event": {
+        "type": "Turn",
+        "turn_order": 4,
+        "end_of_turn": false,
+        "transcript": "Of water.",
+        "words": [
+          {
+            "text": "Of",
+            "start": 40064,
+            "end": 40266,
+            "word_is_final": false
+          },
+          {
+            "text": "water.",
+            "start": 40286,
+            "end": 40894,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 48199,
+      "event": {
+        "type": "Turn",
+        "turn_order": 4,
+        "end_of_turn": false,
+        "transcript": "That's actually a decrease of about 5% since 1970.",
+        "words": [
+          {
+            "text": "That's",
+            "start": 40064,
+            "end": 40588,
+            "word_is_final": false
+          },
+          {
+            "text": "actually",
+            "start": 40605,
+            "end": 41303,
+            "word_is_final": false
+          },
+          {
+            "text": "a",
+            "start": 41320,
+            "end": 41407,
+            "word_is_final": false
+          },
+          {
+            "text": "decrease",
+            "start": 41424,
+            "end": 42122,
+            "word_is_final": false
+          },
+          {
+            "text": "of",
+            "start": 42139,
+            "end": 42313,
+            "word_is_final": false
+          },
+          {
+            "text": "about",
+            "start": 42330,
+            "end": 42766,
+            "word_is_final": false
+          },
+          {
+            "text": "5%",
+            "start": 42783,
+            "end": 42957,
+            "word_is_final": false
+          },
+          {
+            "text": "since",
+            "start": 42974,
+            "end": 43410,
+            "word_is_final": false
+          },
+          {
+            "text": "1970.",
+            "start": 43427,
+            "end": 43863,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 51455,
+      "event": {
+        "type": "Turn",
+        "turn_order": 4,
+        "end_of_turn": false,
+        "transcript": "That's actually a decrease of about 5% since 1980, and on a per capita basis, actually, it's",
+        "words": [
+          {
+            "text": "That's",
+            "start": 40064,
+            "end": 40587,
+            "word_is_final": false
+          },
+          {
+            "text": "actually",
+            "start": 40604,
+            "end": 41302,
+            "word_is_final": false
+          },
+          {
+            "text": "a",
+            "start": 41319,
+            "end": 41406,
+            "word_is_final": false
+          },
+          {
+            "text": "decrease",
+            "start": 41423,
+            "end": 42121,
+            "word_is_final": false
+          },
+          {
+            "text": "of",
+            "start": 42138,
+            "end": 42312,
+            "word_is_final": false
+          },
+          {
+            "text": "about",
+            "start": 42329,
+            "end": 42765,
+            "word_is_final": false
+          },
+          {
+            "text": "5%",
+            "start": 42782,
+            "end": 42956,
+            "word_is_final": false
+          },
+          {
+            "text": "since",
+            "start": 42973,
+            "end": 43409,
+            "word_is_final": false
+          },
+          {
+            "text": "1980,",
+            "start": 43426,
+            "end": 43862,
+            "word_is_final": false
+          },
+          {
+            "text": "and",
+            "start": 43879,
+            "end": 44140,
+            "word_is_final": false
+          },
+          {
+            "text": "on",
+            "start": 44157,
+            "end": 44331,
+            "word_is_final": false
+          },
+          {
+            "text": "a",
+            "start": 44348,
+            "end": 44435,
+            "word_is_final": false
+          },
+          {
+            "text": "per",
+            "start": 44452,
+            "end": 44713,
+            "word_is_final": false
+          },
+          {
+            "text": "capita",
+            "start": 44730,
+            "end": 45253,
+            "word_is_final": false
+          },
+          {
+            "text": "basis,",
+            "start": 45270,
+            "end": 45793,
+            "word_is_final": false
+          },
+          {
+            "text": "actually,",
+            "start": 45810,
+            "end": 46595,
+            "word_is_final": false
+          },
+          {
+            "text": "it's",
+            "start": 46612,
+            "end": 46961,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 54853,
+      "event": {
+        "type": "Turn",
+        "turn_order": 4,
+        "end_of_turn": true,
+        "transcript": "That's actually a decrease of about 5% since 1980, and on a per capita basis, actually a decrease of about 27% since its highest level.",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "That's",
+            "start": 40274,
+            "end": 41227,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "actually",
+            "start": 41291,
+            "end": 41631,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "a",
+            "start": 42018,
+            "end": 42034,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "decrease",
+            "start": 42115,
+            "end": 42616,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of",
+            "start": 42745,
+            "end": 42778,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "about",
+            "start": 42826,
+            "end": 43036,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "5%",
+            "start": 43068,
+            "end": 43408,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "since",
+            "start": 43488,
+            "end": 43811,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "1980,",
+            "start": 43828,
+            "end": 44651,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "and",
+            "start": 45346,
+            "end": 45411,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "on",
+            "start": 45492,
+            "end": 45524,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "a",
+            "start": 45524,
+            "end": 45540,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "per",
+            "start": 45588,
+            "end": 45685,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "capita",
+            "start": 45750,
+            "end": 46105,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "basis,",
+            "start": 46154,
+            "end": 46509,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "actually",
+            "start": 46622,
+            "end": 46962,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "a",
+            "start": 47026,
+            "end": 47042,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "decrease",
+            "start": 47042,
+            "end": 47462,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "of",
+            "start": 47592,
+            "end": 47624,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "about",
+            "start": 47624,
+            "end": 47866,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "27%",
+            "start": 47931,
+            "end": 48496,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "since",
+            "start": 49207,
+            "end": 49466,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "its",
+            "start": 49482,
+            "end": 49627,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "highest",
+            "start": 49692,
+            "end": 49902,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "level.",
+            "start": 49902,
+            "end": 49999,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 55649,
+      "event": {
+        "type": "Turn",
+        "turn_order": 5,
+        "end_of_turn": false,
+        "transcript": "levels in, in",
+        "words": [
+          {
+            "text": "levels",
+            "start": 50080,
+            "end": 50501,
+            "word_is_final": false
+          },
+          {
+            "text": "in,",
+            "start": 50515,
+            "end": 50725,
+            "word_is_final": false
+          },
+          {
+            "text": "in",
+            "start": 50739,
+            "end": 50879,
+            "word_is_final": false
+          }
+        ]
+      }
+    },
+    {
+      "ms": 57512,
+      "event": {
+        "type": "Turn",
+        "turn_order": 5,
+        "end_of_turn": true,
+        "transcript": "levels in, in 1980.",
+        "speaker_label": "B",
+        "words": [
+          {
+            "text": "levels",
+            "start": 50113,
+            "end": 50462,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "in,",
+            "start": 50595,
+            "end": 50629,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "in",
+            "start": 50862,
+            "end": 50895,
+            "speaker": "B",
+            "word_is_final": true
+          },
+          {
+            "text": "1980.",
+            "start": 50945,
+            "end": 51627,
+            "speaker": "B",
+            "word_is_final": true
+          }
+        ]
+      }
+    },
+    {
+      "ms": 58679,
+      "event": {
+        "type": "SpeakerRevision",
+        "revisions": [
+          {
+            "turn_order": 0,
+            "speaker_label": "A",
+            "words": [
+              {
+                "text": "What",
+                "start": 258,
+                "end": 371,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "does",
+                "start": 436,
+                "end": 549,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "this",
+                "start": 662,
+                "end": 775,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "water",
+                "start": 920,
+                "end": 1179,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "use",
+                "start": 1308,
+                "end": 1437,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "report",
+                "start": 1550,
+                "end": 1906,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "tell",
+                "start": 1970,
+                "end": 2148,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "us?",
+                "start": 2293,
+                "end": 2326,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "Well,",
+                "start": 2940,
+                "end": 3053,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "we",
+                "start": 3344,
+                "end": 3440,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "put",
+                "start": 3489,
+                "end": 3618,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "out",
+                "start": 3731,
+                "end": 3780,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "water",
+                "start": 4151,
+                "end": 4329,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "use",
+                "start": 4394,
+                "end": 4507,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "reports",
+                "start": 4620,
+                "end": 4991,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "once",
+                "start": 5040,
+                "end": 5218,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "every",
+                "start": 5282,
+                "end": 5444,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "5",
+                "start": 5508,
+                "end": 5848,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "years",
+                "start": 5912,
+                "end": 6187,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "to",
+                "start": 6251,
+                "end": 6332,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "tell",
+                "start": 6397,
+                "end": 6526,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "us",
+                "start": 6575,
+                "end": 6688,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "where",
+                "start": 7124,
+                "end": 7318,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "we",
+                "start": 7366,
+                "end": 7398,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "stand",
+                "start": 7463,
+                "end": 7883,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "in",
+                "start": 8368,
+                "end": 8448,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "terms",
+                "start": 8497,
+                "end": 8788,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "of",
+                "start": 8852,
+                "end": 8917,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "how",
+                "start": 8982,
+                "end": 9079,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "people",
+                "start": 9159,
+                "end": 9434,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "are",
+                "start": 9482,
+                "end": 9563,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "using",
+                "start": 9563,
+                "end": 9822,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "water",
+                "start": 9886,
+                "end": 9983,
+                "speaker": "A",
+                "word_is_final": true
+              }
+            ]
+          },
+          {
+            "turn_order": 1,
+            "speaker_label": "A",
+            "words": [
+              {
+                "text": "all",
+                "start": 10193,
+                "end": 10242,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "across",
+                "start": 10355,
+                "end": 10629,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "the",
+                "start": 10694,
+                "end": 10726,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "United",
+                "start": 10759,
+                "end": 11098,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "States.",
+                "start": 11098,
+                "end": 11453,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "We",
+                "start": 11970,
+                "end": 12003,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "give",
+                "start": 12067,
+                "end": 12229,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "national",
+                "start": 12229,
+                "end": 12907,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "totals,",
+                "start": 13182,
+                "end": 13618,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "but",
+                "start": 14087,
+                "end": 14183,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "we",
+                "start": 14183,
+                "end": 14264,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "also",
+                "start": 14393,
+                "end": 14668,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "divvy",
+                "start": 15137,
+                "end": 15314,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "it",
+                "start": 15379,
+                "end": 15411,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "up",
+                "start": 15524,
+                "end": 15637,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "and",
+                "start": 15702,
+                "end": 15750,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "look",
+                "start": 16009,
+                "end": 16122,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "at",
+                "start": 16170,
+                "end": 16461,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "how",
+                "start": 16574,
+                "end": 16671,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "it's",
+                "start": 16752,
+                "end": 16833,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "used",
+                "start": 16897,
+                "end": 17237,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "on",
+                "start": 17301,
+                "end": 17350,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "a",
+                "start": 17463,
+                "end": 17479,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "basis",
+                "start": 18044,
+                "end": 18400,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "of",
+                "start": 18594,
+                "end": 18707,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "states",
+                "start": 18836,
+                "end": 19288,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "and",
+                "start": 19498,
+                "end": 19611,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "what",
+                "start": 19741,
+                "end": 19821,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "we",
+                "start": 19902,
+                "end": 19983,
+                "speaker": "A",
+                "word_is_final": true
+              }
+            ]
+          },
+          {
+            "turn_order": 2,
+            "speaker_label": "B",
+            "words": [
+              {
+                "text": "find",
+                "start": 20064,
+                "end": 20322,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "in",
+                "start": 20387,
+                "end": 20419,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "this",
+                "start": 20468,
+                "end": 20565,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "report,",
+                "start": 20629,
+                "end": 21114,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "which",
+                "start": 21178,
+                "end": 21275,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "is",
+                "start": 21356,
+                "end": 21453,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "keyed",
+                "start": 21599,
+                "end": 21857,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "on",
+                "start": 21986,
+                "end": 22019,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "the",
+                "start": 22083,
+                "end": 22115,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "year",
+                "start": 22229,
+                "end": 22342,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "of—",
+                "start": 22406,
+                "end": 22649,
+                "speaker": "A",
+                "word_is_final": true
+              },
+              {
+                "text": "year",
+                "start": 22972,
+                "end": 23085,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "2005,",
+                "start": 23198,
+                "end": 24119,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "is",
+                "start": 24894,
+                "end": 24943,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "that",
+                "start": 24991,
+                "end": 25104,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "really",
+                "start": 25136,
+                "end": 25314,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "water",
+                "start": 25379,
+                "end": 25589,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "use",
+                "start": 25637,
+                "end": 25831,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "has",
+                "start": 25880,
+                "end": 25993,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "been",
+                "start": 26122,
+                "end": 26235,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "quite",
+                "start": 26364,
+                "end": 26623,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "stable",
+                "start": 26687,
+                "end": 27204,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "across",
+                "start": 27398,
+                "end": 27689,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "the",
+                "start": 27802,
+                "end": 27850,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "United",
+                "start": 27883,
+                "end": 28222,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "States",
+                "start": 28222,
+                "end": 28577,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "over",
+                "start": 29902,
+                "end": 29951,
+                "speaker": "B",
+                "word_is_final": true
+              },
+              {
+                "text": "the",
+                "start": 29983,
+                "end": 30015,
+                "speaker": "B",
+                "word_is_final": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ms": 59028,
+      "event": {
+        "type": "Termination",
+        "audio_duration_seconds": 53,
+        "session_duration_seconds": 58
+      }
+    }
+  ]
+}
