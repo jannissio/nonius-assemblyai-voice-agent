@@ -22,6 +22,7 @@
   Closing or refreshing the page loses unsaved work. This is not a multi-user
   collaboration or durable archival system.
 - The local budget file is not a provider invoice. An ephemeral hosting filesystem
-  can reset the ledger; live public hosting requires durable storage and restricted
-  access. See DEPLOYMENT.md and SECURITY.md.
+  can reset a local file ledger. The hosted launcher uses PostgreSQL transactions
+  for daily and cumulative limits and stops paid calls if accounting fails.
+  Public visitors share the allowance and may exhaust it. See DEPLOYMENT.md.
 

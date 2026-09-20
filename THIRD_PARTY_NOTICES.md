@@ -3,13 +3,30 @@
 Original application code, authored documentation and fictional fixture text are
 MIT licensed. This does not relicense external services, software or research.
 
-| Runtime package | Version | Licence |
+| Package | Locked version | Licence |
 |---|---|---|
-| ws | 8.21.3 | [MIT notice](docs/LICENSE-ws.txt) |
-| fflate | 0.8.3 | [MIT notice](docs/LICENSE-fflate.txt) |
+| fflate | 0.8.3 | MIT |
+| pg | 8.23.0 | MIT |
+| pg-cloudflare | 1.4.0 | MIT |
+| pg-connection-string | 2.14.0 | MIT |
+| pg-int8 | 1.0.1 | ISC |
+| pg-pool | 3.14.0 | MIT |
+| pg-protocol | 1.16.0 | MIT |
+| pg-types | 2.2.0 | MIT |
+| pgpass | 1.0.5 | MIT |
+| postgres-array | 2.0.0 | MIT |
+| postgres-bytea | 1.0.1 | MIT |
+| postgres-date | 1.0.7 | MIT |
+| postgres-interval | 1.2.0 | MIT |
+| split2 | 4.2.0 | ISC |
+| ws | 8.21.3 | MIT |
+| xtend | 4.0.2 | MIT |
 
-The lockfile pins these two dependencies. Optional native performance peers are
-not required. Install with `npm ci --ignore-scripts`.
+The three direct dependencies (`ws`, `fflate`, `pg`) are MIT. Transitive packages
+also include the permissive ISC licence. Full notices are preserved in
+[THIRD_PARTY_LICENSES.txt](docs/THIRD_PARTY_LICENSES.txt). Original Nonius code
+remains MIT; third-party code retains its own notices. The lockfile pins the
+complete tree. Install with `npm ci --ignore-scripts`.
 
 The Riverton interview and speech-test sentences are fictional, authored for this
 project. Their WAV files were synthesized with installed Windows voices. Voice

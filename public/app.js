@@ -548,7 +548,7 @@ $('#export-bundle').addEventListener('click',async()=>{
   const zip=zipSync(files,{level:0});const url=URL.createObjectURL(new Blob([zip],{type:'application/zip'}));const link=node('a');link.href=url;link.download=`nonius-${session.id.slice(0,8)}.zip`;link.click();setTimeout(()=>URL.revokeObjectURL(url),3000);event('bundle_exported');toast('Interview bundle downloaded.');
 });
 
-function renderBudget(b){$('#budget-description').textContent=`$${b.reservedUsd.toFixed(3)} reserved against the $${b.limitUsd.toFixed(2)} local development limit. ${b.llmCalls} analysis calls reserved. Audio reservations cover the maximum permitted session duration.`;}
+function renderBudget(b){const daily=Number.isFinite(b.dailyLimitUsd)?`Today: $${b.dailyReservedUsd.toFixed(3)} of $${b.dailyLimitUsd.toFixed(2)}. Resets at midnight in ${b.resetTimeZone}. `:'';$('#budget-description').textContent=daily+`Total: $${b.reservedUsd.toFixed(3)} of $${b.limitUsd.toFixed(2)} reserved. ${b.llmCalls} analysis calls reserved. Audio reservations cover the maximum permitted session duration.`;}
 async function refreshConfig(){try{const response=await fetch('/api/config');if(!response.ok)throw new Error();config=await response.json();renderBudget(config.budget);if(!config.liveAvailable)$('#recording-hint').textContent='Add an AssemblyAI key on the server to enable live speech. The sample works now.';controls();}catch{notice('The local server could not be reached. Please restart it and reload.',true);}}
 window.addEventListener('beforeunload',e=>{if(recording){e.preventDefault();e.returnValue='';}if(stream?.readyState===WebSocket.OPEN)stream.send(JSON.stringify({type:'Terminate'}));});
 renderPeople();renderGoals();controls();void refreshConfig();

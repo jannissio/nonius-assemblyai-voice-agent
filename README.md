@@ -79,8 +79,10 @@ flowchart LR
 - **Privacy:** provider credentials stay on the server. Live audio and analysis
   context go to AssemblyAI; notebook content stays in browser memory until exported.
 
-There are two runtime packages, `ws` and `fflate`, both MIT. No model download,
-database or frontend build is required for local use.
+The direct runtime packages are `ws`, `fflate` and `pg`, all MIT. The PostgreSQL
+client also has permissively licensed MIT/ISC dependencies, listed in the notices.
+No model download or frontend build is required. Local use needs no database;
+live cloud hosting uses PostgreSQL for durable quota accounting.
 
 ## Research and evaluation
 
@@ -117,8 +119,9 @@ using the prototype with real reporting material.
 
 See [deployment instructions](docs/DEPLOYMENT.md). The hosted launcher starts in
 keyless sample mode unless live mode is explicitly configured. Live hosting needs
-HTTPS, a private server-side API key, a strong demo password, an exact hostname
-allowlist and durable budget storage. Do not put a provider key in client code,
+HTTPS, a private server-side API key, an exact hostname allowlist, PostgreSQL and
+explicit daily and total limits. Public live access is opt-in; a shared demo
+password remains available for restricted deployments. Do not put a provider key in client code,
 build arguments, URLs or a public repository.
 
 GitHub Pages cannot run this Node/WebSocket backend. Replit can run it; the hosting

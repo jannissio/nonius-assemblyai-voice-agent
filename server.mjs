@@ -28,7 +28,8 @@ function validOrigin(req){
 async function jsonBody(req){let bytes=0,parts=[];for await(const part of req){bytes+=part.length;if(bytes>48000){const e=new Error('Request exceeds 48 KB.');e.status=413;throw e;}parts.push(part);}return JSON.parse(Buffer.concat(parts).toString());}
 
 export function createApplication({config=configuration(),budget=new Budget(config),analyze=proposeFollowups,synthesize=synthesizeLocal,Upstream=WebSocket}={}) {
-  if(config.key&&!['127.0.0.1','localhost','::1'].includes(config.host)&&config.demoPassword.length<16)
+  if(config.key&&!['127.0.0.1','localhost','::1'].includes(config.host)&&config.demoPassword.length<16&&
+    !(config.allowPublicLive&&budget.durable===true&&Number.isFinite(config.dailyBudgetUsd)))
     throw new Error('A non-local live server requires a NONIUS_DEMO_PASSWORD of at least 16 characters.');
   const validHost=req=>{try{return config.allowedHosts.includes(new URL(`http://${req.headers.host}`).hostname);}catch{return false;}};
   const digest=value=>createHash('sha256').update(value).digest();
@@ -45,7 +46,7 @@ export function createApplication({config=configuration(),budget=new Budget(conf
       if(req.method==='GET'&&url.pathname==='/healthz')return reply(res,200,{status:'ok',application:'Nonius'});
       if(!authorized(req)){res.setHeader('WWW-Authenticate','Basic realm="Nonius demo", charset="UTF-8"');return reply(res,401,{error:'This demonstration requires access credentials.'});}
       if(req.method==='GET'&&url.pathname==='/api/config')return reply(res,200,{liveAvailable:Boolean(config.key),
-        speechModel:config.speechModel,speakerDetection:true,llmModel:config.llmModel,promptVersion:PROMPT_VERSION,localSpeechAvailable:process.platform==='win32',maxSessionSeconds:config.maxSessionSeconds,budget:budget.snapshot()});
+        speechModel:config.speechModel,speakerDetection:true,llmModel:config.llmModel,promptVersion:PROMPT_VERSION,localSpeechAvailable:process.platform==='win32',maxSessionSeconds:config.maxSessionSeconds,budget:await budget.snapshot()});
       if(req.method==='POST'&&url.pathname==='/api/speak'){
         if(!validOrigin(req)||req.headers['x-nonius-client']!=='interview-desk')return reply(res,403,{error:'Same-origin client required.'});
         if(!allow(req,'speech',12)||activeSpeech>=1)return reply(res,429,{error:'Please wait for the current spoken response.'});
@@ -64,7 +65,7 @@ export function createApplication({config=configuration(),budget=new Budget(conf
           const result=await analyze({turns,brief:typeof body.brief==='string'?body.brief:'',goals:Array.isArray(body.goals)?body.goals:[],previousCues:Array.isArray(body.previousCues)?body.previousCues:[]},
             {config,budget,forceRules:body.engine==='rules'});
           const {raw,...visible}=result;
-          return reply(res,200,{...visible,budget:budget.snapshot()});
+          return reply(res,200,{...visible,budget:await budget.snapshot()});
         }finally{activeAnalysis--;}
       }
       if(req.method!=='GET'&&req.method!=='HEAD')return reply(res,405,{error:'Method not allowed.'});
@@ -86,19 +87,20 @@ export function createApplication({config=configuration(),budget=new Budget(conf
       res.writeHead(200,{...headers,'content-length':info.size});res.end(req.method==='HEAD'?undefined:await readFile(path));
     }catch(error){
       if(res.headersSent){res.end();return;}
-      const status=['BUDGET_EXHAUSTED','LLM_COOLDOWN'].includes(error.code)?429:error.code==='PROVIDER_ERROR'?502:error.name==='TimeoutError'?504:error.status||400;
+      const status=['BUDGET_EXHAUSTED','DAILY_BUDGET_EXHAUSTED','LLM_COOLDOWN'].includes(error.code)?429:error.code==='PROVIDER_ERROR'?502:error.name==='TimeoutError'?504:error.status||400;
       // No upstream response body, request headers, or credentials are logged or returned.
       reply(res,status,{error:error.code==='PROVIDER_ERROR'?error.message:error.name==='TimeoutError'?'Analysis timed out. Please retry or use local checks.':error.message?.slice(0,180)||'Request failed.'});
     }
   });
   const wss=new WebSocketServer({noServer:true,maxPayload:64000,perMessageDeflate:false});
-  server.on('upgrade',(req,socket,head)=>{
+  server.on('upgrade',async(req,socket,head)=>{
     let url;try{url=new URL(req.url,'http://localhost');}catch{socket.destroy();return;}
     if(url.pathname!=='/api/stream'||!validHost(req)||!authorized(req)||!validOrigin(req)||!config.key||activeStreams>=1||!allow(req,'stream',4)){
       socket.write('HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n');socket.destroy();return;}
     const sessionSeconds=url.searchParams.get('purpose')==='question'?Math.min(25,config.maxSessionSeconds):config.maxSessionSeconds;
-    try{budget.reserve('audio',{seconds:sessionSeconds});}catch{socket.write('HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\n\r\n');socket.destroy();return;}
     activeStreams++;
+    try{await budget.reserve('audio',{seconds:sessionSeconds});}catch{activeStreams--;socket.write('HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\n\r\n');socket.destroy();return;}
+    if(socket.destroyed){activeStreams--;return;}
     wss.handleUpgrade(req,socket,head,client=>{
       let closed=false,ready=false,totalBytes=0,upstream,terminating=false,terminated=false,terminationTimeout;
       const send=payload=>{if(client.readyState===WebSocket.OPEN)client.send(JSON.stringify(payload));};

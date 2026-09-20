@@ -2,6 +2,7 @@ import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {configuration} from '../lib/config.mjs';
 import {createApplication} from '../server.mjs';
+import {PostgresBudget} from '../lib/postgres-budget.mjs';
 
 export function hostedConfiguration(env=process.env) {
   const mode=env.NONIUS_HOSTED_MODE||'sample';
@@ -15,20 +16,20 @@ export function hostedConfiguration(env=process.env) {
   if(mode==='sample')return configuration({...common,NONIUS_MAX_AUDIO_SECONDS:'0',
     NONIUS_MAX_LLM_CALLS:'0',NONIUS_BUDGET_USD:'0',NONIUS_BUDGET_PATH:'runtime/sample-budget.json'});
   if(!domains.length)throw new Error('Live hosting requires an exact deployment hostname.');
-  if(!env.NONIUS_BUDGET_PATH||env.NONIUS_DURABLE_BUDGET_CONFIRMED!=='true')
-    throw new Error('Configure a durable NONIUS_BUDGET_PATH and confirm single-instance persistent storage before live hosting.');
+  if(!env.DATABASE_URL)throw new Error('Live hosting requires a durable DATABASE_URL.');
   const config=configuration({...env,...common});
   if(!config.key)throw new Error('Live hosting requires a server-side AssemblyAI secret.');
-  if(config.demoPassword.length<16)throw new Error('Live hosting requires a demo password of at least 16 characters.');
+  if(config.demoPassword.length<16&&!config.allowPublicLive)throw new Error('Live hosting requires a demo password of at least 16 characters, or explicit public live mode.');
+  if(!Number.isFinite(config.dailyBudgetUsd))throw new Error('Live hosting requires an explicit daily allowance.');
   return config;
 }
 
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
   const config=hostedConfiguration();
-  const {server}=createApplication({config});
-  server.listen(config.port,config.host,()=>console.log(`Nonius hosted ${config.key?'protected live':'keyless sample'} mode on port ${config.port}`));
+  const budget=config.key?await new PostgresBudget(config,{connectionString:process.env.DATABASE_URL}).initialize():undefined;
+  const {server}=createApplication({config,...(budget?{budget}:{})});
+  server.listen(config.port,config.host,()=>console.log(`Nonius hosted ${config.key?(config.allowPublicLive?'capped public live':'protected live'):'keyless sample'} mode on port ${config.port}`));
   for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{
-    server.close(()=>process.exit(0));setTimeout(()=>process.exit(0),2000).unref();
+    server.close(async()=>{await budget?.close();process.exit(0);});setTimeout(()=>process.exit(0),2000).unref();
   });
 }
-

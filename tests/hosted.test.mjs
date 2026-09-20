@@ -14,12 +14,13 @@ test('live hosted mode fails closed without a host, durable budget, key and pass
   const base={NONIUS_HOSTED_MODE:'live'};
   assert.throws(()=>hostedConfiguration(base),/hostname/);
   base.NONIUS_ALLOWED_HOSTS='nonius.example';assert.throws(()=>hostedConfiguration(base),/durable/);
-  base.NONIUS_BUDGET_PATH='/durable/budget.json';base.NONIUS_DURABLE_BUDGET_CONFIRMED='true';
+  base.DATABASE_URL='postgresql://test.invalid/example';
   assert.throws(()=>hostedConfiguration(base),/AssemblyAI secret/);
   base.ASSEMBLYAI_API_KEY='test-only-provider-key';assert.throws(()=>hostedConfiguration(base),/password/);
   base.NONIUS_DEMO_PASSWORD='test-only-demo-password';
+  assert.throws(()=>hostedConfiguration(base),/daily allowance/);base.NONIUS_DAILY_BUDGET_USD='1';
   assert.equal(hostedConfiguration(base).key,base.ASSEMBLYAI_API_KEY);
+  assert.equal(hostedConfiguration({...base,NONIUS_DEMO_PASSWORD:'',NONIUS_PUBLIC_LIVE:'true'}).allowPublicLive,true);
   assert.throws(()=>hostedConfiguration({...base,NONIUS_ALLOWED_HOSTS:'*.example'}),/exact hostnames/);
   assert.throws(()=>hostedConfiguration({NONIUS_HOSTED_MODE:'unexpected'}),/sample or live/);
 });
-

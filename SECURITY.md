@@ -8,17 +8,19 @@ server configuration. Credentials and upstream error bodies are not logged.
 The application checks HTTP/WebSocket hosts and browser origins, bounds payloads,
 audio duration and concurrent operations, and applies local rate and budget
 controls. A live server bound beyond loopback requires a demo password of at
-least 16 characters. This shared password is a prototype access control, not
-individual user accounts or a production security audit.
+least 16 characters unless public live access is explicitly enabled with durable
+accounting and a daily limit. Neither mode constitutes a production security audit.
 
 For a public deployment:
 
 1. Use HTTPS and the host's secret manager. Keep `.env` out of Git and uploads.
 2. Allow only the exact deployment hostname. Do not use a wildcard.
-3. Keep the live demo password private and separate from the AssemblyAI key.
-4. Put the quota ledger on durable storage and use a single app instance. An
-   ephemeral filesystem or independently scaled copies can reset or multiply
-   the allowance. The app's reservation is not a provider billing guarantee.
+3. Choose public capped access or keep a separate demo password private.
+4. Use the hosted launcher's PostgreSQL ledger. Row locks serialize reservations
+   across instances, and daily/cumulative totals survive restarts. A paid request
+   waits for commit. Accounting failures block calls. Keep the same production
+   database and ledger identifier across deployments; replacing them resets the
+   record. Reservations are conservative estimates, not provider invoices.
 5. Keep recording consent and cloud processing clear. Avoid confidential source
    material in this prototype. Exported notebooks are unencrypted.
 

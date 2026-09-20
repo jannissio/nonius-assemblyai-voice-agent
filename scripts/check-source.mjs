@@ -21,5 +21,10 @@ for(const name of Object.keys(pkg.dependencies)){
   assert.equal(installed.version,pkg.dependencies[name],`${name} version changed`);
 }
 assert.ok(files.includes('LICENSE'));
-console.log(`Source check passed: ${files.length} files; two pinned MIT dependencies; no excluded paths or detected credential patterns.`);
+const lock=JSON.parse(readFileSync('package-lock.json','utf8'));
+for(const [name,info] of Object.entries(lock.packages))if(name){
+  assert.ok(['MIT','ISC'].includes(info.license),`${name} licence must be reviewed`);
+  assert.ok(readFileSync('docs/THIRD_PARTY_LICENSES.txt','utf8').includes(`===== ${name.replace('node_modules/','')} ${info.version} (${info.license}) =====`),`${name} notice missing`);
+}
+console.log(`Source check passed: ${files.length} files; ${Object.keys(pkg.dependencies).length} pinned MIT direct dependencies; no excluded paths or detected credential patterns.`);
 console.log('This is a bounded source check, not a guarantee against every possible secret.');
