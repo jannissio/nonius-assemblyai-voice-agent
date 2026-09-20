@@ -4,6 +4,12 @@ Provider credentials are read by the Node server. The browser receives a boolean
 indicating live availability, model names and quota status, never the provider
 key. Static routes are allowlisted and do not serve `.env`, runtime files or
 server configuration. Credentials and upstream error bodies are not logged.
+Unexpected HTTP errors return a generic message instead of internal diagnostics,
+paths or stack traces. Known validation and quota failures use safe messages.
+
+`.env.example` is a public setup template with empty credential fields. Keep
+actual values only in an ignored local `.env` or the host's secret manager.
+This document contains security guidance, not passwords or private configuration.
 
 The application checks HTTP/WebSocket hosts and browser origins, bounds payloads,
 audio duration and concurrent operations, and applies local rate and budget
@@ -30,4 +36,3 @@ Use that mode for unrestricted public exploration without paid API access.
 Do not post credentials or private interview material in public issue reports.
 If a credential is exposed, revoke it through its provider and replace it in
 server secrets; removing it from the latest Git commit alone is insufficient.
-

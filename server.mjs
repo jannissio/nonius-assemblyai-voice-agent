@@ -25,7 +25,44 @@ function validOrigin(req){
   if(!req.headers.origin)return true; // Local CLI/testing. Browsers supply Origin on writes.
   try{return new URL(req.headers.origin).host===req.headers.host;}catch{return false;}
 }
-async function jsonBody(req){let bytes=0,parts=[];for await(const part of req){bytes+=part.length;if(bytes>48000){const e=new Error('Request exceeds 48 KB.');e.status=413;throw e;}parts.push(part);}return JSON.parse(Buffer.concat(parts).toString());}
+function clientError(error){
+  const fixed={
+    BUDGET_EXHAUSTED:[429,'Credit limit reached. The sample interview remains available.'],
+    DAILY_BUDGET_EXHAUSTED:[429,"Today's demo allowance is used up. It resets at midnight in the configured timezone. The sample remains available."],
+    BUDGET_UNAVAILABLE:[503,'Usage controls are temporarily unavailable. No new provider request is allowed.'],
+    PROVIDER_ERROR:[502,'AssemblyAI analysis failed. Please retry or use local checks.'],
+    REQUEST_TOO_LARGE:[413,'Request exceeds 48 KB.'],
+    INVALID_REQUEST:[400,'Provide a valid JSON object.']
+  };
+  if(Object.hasOwn(fixed,error?.code))return fixed[error.code];
+  if(error?.code==='LLM_COOLDOWN'){
+    const seconds=Number.isInteger(error.retryAfterSeconds)&&error.retryAfterSeconds>0&&error.retryAfterSeconds<=120?error.retryAfterSeconds:null;
+    return [429,seconds?`Live analysis is available in ${seconds} seconds. Existing suggestions and local checks remain available.`:'Please wait before requesting another live analysis.'];
+  }
+  if(error?.name==='TimeoutError')return [504,'Analysis timed out. Please retry or use local checks.'];
+  // Only exact, application-authored messages may pass through. Filesystem,
+  // network, database and JSON parser diagnostics can contain private details.
+  const known=new Map([
+    ['Invalid transcript turn.',400],
+    ['Speech must contain 1–1,000 characters.',400],
+    ['Local Windows speech is unavailable; use browser speech.',503],
+    ['Local speech timed out.',504],
+    ['Local speech could not start.',503],
+    ['Local speech exceeded its size limit.',503],
+    ['Local speech generation failed.',503],
+    ['AssemblyAI returned invalid analysis JSON.',502],
+    ['AssemblyAI returned no structured analysis.',502],
+    ['This budget profile covers Qwen 3.5 4B Fast and Haiku 4.5 only. Review prices before changing models.',503],
+    ['Budget ledger is invalid. Live calls disabled until reviewed.',503]
+  ]);
+  return known.has(error?.message)?[known.get(error.message),error.message]:[500,'Request failed. Please retry or use the sample interview.'];
+}
+async function jsonBody(req){
+  let bytes=0,parts=[];for await(const part of req){bytes+=part.length;if(bytes>48000)throw Object.assign(new Error(),{code:'REQUEST_TOO_LARGE'});parts.push(part);}
+  let body;try{body=JSON.parse(Buffer.concat(parts).toString());}catch{throw Object.assign(new Error(),{code:'INVALID_REQUEST'});}
+  if(!body||typeof body!=='object'||Array.isArray(body))throw Object.assign(new Error(),{code:'INVALID_REQUEST'});
+  return body;
+}
 
 export function createApplication({config=configuration(),budget=new Budget(config),analyze=proposeFollowups,synthesize=synthesizeLocal,Upstream=WebSocket}={}) {
   if(config.key&&!['127.0.0.1','localhost','::1'].includes(config.host)&&config.demoPassword.length<16&&
@@ -87,9 +124,8 @@ export function createApplication({config=configuration(),budget=new Budget(conf
       res.writeHead(200,{...headers,'content-length':info.size});res.end(req.method==='HEAD'?undefined:await readFile(path));
     }catch(error){
       if(res.headersSent){res.end();return;}
-      const status=['BUDGET_EXHAUSTED','DAILY_BUDGET_EXHAUSTED','LLM_COOLDOWN'].includes(error.code)?429:error.code==='PROVIDER_ERROR'?502:error.name==='TimeoutError'?504:error.status||400;
       // No upstream response body, request headers, or credentials are logged or returned.
-      reply(res,status,{error:error.code==='PROVIDER_ERROR'?error.message:error.name==='TimeoutError'?'Analysis timed out. Please retry or use local checks.':error.message?.slice(0,180)||'Request failed.'});
+      const [status,message]=clientError(error);reply(res,status,{error:message});
     }
   });
   const wss=new WebSocketServer({noServer:true,maxPayload:64000,perMessageDeflate:false});
